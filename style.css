@@ -1,3 +1,12 @@
+@-webkit-keyframes fadeIn {
+	from {
+		opacity: 0;
+	}
+	to{
+		opacity: 1;
+	}
+}
+
 body {
 	color:#444;
 	font:normal 16px "Raleway","Helvetica Neue",Helvetica,Arial,sans-serif;
@@ -128,16 +137,16 @@ img {
 	color:#16a085;
 }
 .btn-default,.label-default {
-	border-color:#FFF;
-	color:#fff;
-	background-color:transparent;
-	border-width:2px;
-	padding:15px 20px;
+	border-color: #FFF;
+	color: #fff;
+	border-width: 2px;
+	padding: 15px 20px;
 }
 .btn-default:hover,.btn-default:focus {
 	background-color:#F9FAFD;
 	border-color:#F9FAFD;
 	color:#444;
+	text-shadow: none;
 }
 .btn-success,.label-success,.alert-success {
 	background-color:#FFF;
@@ -379,7 +388,7 @@ label {
 	width:100%;
 	top:0;
 	position:fixed;
-	background-image:url(http://unsplash.it/1600/600?random=1);
+	background-image:url('./assets/img/oak.jpg');
 	background-position:center center;
 	background-repeat:no-repeat;
 	-webkit-background-size: cover;
@@ -428,20 +437,42 @@ label {
 #hero {
 	margin-top:140px;
 	padding:0;
-	color:#FFF;
+	color: #e0e1dd;
+	text-shadow: -1px 0 #595959, 0 1px #595959, 1px 0 #595959, 0 -1px #595959;
 }
 #hero .herotext {
-	padding:160px 0px;
+	padding:160px 0;
 }
 #hero h1 {
-	font-size:50px;
+	font-size: 50px;
+	background-color: rgba(224, 225, 221, 0.2);
+	width: max-content;
+	box-shadow: 0 0 10px 5px rgba(224, 225, 221, 0.2);
+	font-family: 'Cantata One', serif;
 }
 #hero p.lead {
-	font-size:1.4em;
+	font-size: 1.4em;
+	font-weight: bold;
+	background-color: rgba(224, 225, 221, 0.2);
+	width: max-content;
+	box-shadow: 0 0 10px 5px rgba(224, 225, 221, 0.2);
+	font-family: 'Imprima', sans-serif;
 }
 #hero .btn {
-	font-size:12px;
+	font-size: 12px;
+	font-weight: bold;
+	background-color: rgba(224, 225, 221, 0.7);
+	animation: fadeIn 4s;
+	text-shadow: none;
+	color: black;
+	font-family: 'Imprima', sans-serif;
 }
+
+#hero .btn:hover {
+	background-color: rgba(119,141,169,0.8);
+	color: white;
+}
+
 /*	Features	==================================================*/
 #features {
 	background-color:#01B0D1;
