@@ -16,21 +16,23 @@ body {
 	line-height:1.5;
 }
 a {
-	color:#3498db;
+	color:#62a87c;
 	cursor:pointer;
 	text-decoration:none;
 		-moz-transition:all .2s;
 	-o-transition:all .2s;
 	-webkit-transition:all .2s;
 	transition:all .2s;
+	font-family: 'Cantata One', serif;
+	background-color: transparent;
 }
 a:hover,a:focus {
-	color:#3498db;
+	color:#62a87c;
 	outline:none;
 	text-decoration:none;
 }
 h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6 {
-	font-family:"Raleway","Helvetica Neue",Helvetica,Arial,sans-serif;
+
 	font-weight:bold;
 	margin-bottom:15px;
 	margin-top:0;
@@ -44,7 +46,17 @@ h2 {
 h3 {
 	font-size:24px;
 	display:block;
+	font-family: 'Imprima', sans-serif;
 }
+
+#about h3 {
+	color: #62a87c;
+}
+
+#about p {
+	color: white;
+}
+
 h4 {
 	font-size:20px;
 }
@@ -60,6 +72,7 @@ p.lead {
 }
 p {
 	margin-bottom:20px;
+	font-family: 'Cantata One', serif;
 }
 p:last-child {
 	margin-bottom:0;
@@ -86,6 +99,37 @@ pre {
 img {
 	max-width: 100%;
 }
+
+/*	Containers	==================================================*/
+#development_container {
+	background-image: url("./assets/img/sequoia.png");
+	height: 90%;
+	background-position: 72% 21%;
+}
+
+.text_container {
+	background-color: rgba(0, 0, 0, 0.4);
+	box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.4);
+	width: 100%
+}
+
+#background_container {
+	background-image: url("./assets/img/taft_point.png");
+	background-position: 56% 14%;
+}
+
+#education_container {
+	/*background-image: url()*/
+}
+
+#workhistory_container {
+	/*background-image: url()*/
+}
+
+#hobbies_container {
+	/*background-image: ()*/
+}
+
 /*	Section	==================================================*/
 
 .active-section {
@@ -98,6 +142,7 @@ img {
 	text-transform:uppercase;
 	font-size:30px;
 	letter-spacing:5px;
+	font-family: 'Imprima', sans-serif;
 }
 .whitecolor {
 	color: #fff;
@@ -167,9 +212,9 @@ img {
 	border-color:#d33c00;
 }
 .btn-info,.label-info,.alert-info {
-	background-color:#FFF;
-	border-color:#FFF;
-	color:#01B0D1;
+	border-color: transparent;
+	background-color: rgba(225, 225, 225, 0.8);
+	box-shadow: 0 0 10px 5px rgba(225, 225, 225, 0.8);
 }
 .btn-info:hover,.btn-info:focus {
 	background-color:#FFF;
@@ -388,7 +433,7 @@ label {
 	width:100%;
 	top:0;
 	position:fixed;
-	background-image:url('./assets/img/oak.jpg');
+	background-image:url('./assets/img/oak_bw_dark.png');
 	background-position:center center;
 	background-repeat:no-repeat;
 	-webkit-background-size: cover;
@@ -401,9 +446,11 @@ label {
 .navbar-inverse .navbar-brand {
 	padding:30px 15px;
 	margin-right:30px;
-	color:inherit;
 	text-transform:uppercase;
+	color:inherit;
 	font-weight:bold;
+	font-size: 150%;
+	font-family: 'Imprima', sans-serif;
 }
 .navbar-inverse .navbar-brand:hover,.navbar-inverse .navbar-brand:focus {
 	color:#000;
@@ -424,16 +471,23 @@ label {
 	text-transform:uppercase;
 	font-size:12px;
 	font-weight:bold;
+	font-family: 'Cantata One', serif;
 }
 .navbar-inverse .navbar-nav>li>a:hover,.navbar-inverse .navbar-nav>li>a:focus,.navbar-inverse .navbar-nav>.active>a,.navbar-inverse .navbar-nav>.active>a:hover,.navbar-inverse .navbar-nav>.active>a:focus {
 	background-color:transparent;
 	background-color:rgba(255,255,255,0);
-	color:#01b0d1;
+	color:#62a87c;
 }
 .header-button {
 	margin-left: 15px;
 }
 /*	Hero	==================================================*/
+#herotext_container {
+	background-color: rgba(0,0,0, 0.6);
+	width: max-content;
+	box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.6);
+}
+
 #hero {
 	margin-top:140px;
 	padding:0;
@@ -445,17 +499,20 @@ label {
 }
 #hero h1 {
 	font-size: 50px;
-	background-color: rgba(224, 225, 221, 0.2);
+	/*background-color: rgba(224, 225, 221, 0.2);*/
 	width: max-content;
-	box-shadow: 0 0 10px 5px rgba(224, 225, 221, 0.2);
-	font-family: 'Cantata One', serif;
+	/*box-shadow: 0 0 10px 5px rgba(224, 225, 221, 0.2);*/
+	/*font-family: 'Cantata One', serif;*/
+	font-family: 'Imprima', sans-serif;
+	margin-bottom: 20px;
+	color: #62A87C;
 }
 #hero p.lead {
 	font-size: 1.4em;
 	font-weight: bold;
-	background-color: rgba(224, 225, 221, 0.2);
+	/*background-color: rgba(224, 225, 221, 0.2);*/
 	width: max-content;
-	box-shadow: 0 0 10px 5px rgba(224, 225, 221, 0.2);
+	/*box-shadow: 0 0 10px 5px rgba(224, 225, 221, 0.2);*/
 	font-family: 'Imprima', sans-serif;
 }
 #hero .btn {
@@ -465,11 +522,12 @@ label {
 	animation: fadeIn 4s;
 	text-shadow: none;
 	color: black;
-	font-family: 'Imprima', sans-serif;
+	/*font-family: 'Imprima', sans-serif;*/
+	font-family: 'Cantata One', serif;
 }
 
 #hero .btn:hover {
-	background-color: rgba(119,141,169,0.8);
+	background-color: rgba(98,168,124,0.8);
 	color: white;
 }
 
@@ -504,6 +562,10 @@ label {
 }
 .service-box img {
 	margin-bottom: 29px;
+}
+
+#about_me {
+
 }
 
 /*	Gallery	==================================================*/ 
