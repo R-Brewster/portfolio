@@ -100,11 +100,22 @@ img {
 	max-width: 100%;
 }
 
+.glyphicon {
+	color: #62A87C
+}
+
+#center_text_container {
+	background-color: rgba(0,0,0, 0.6);
+	box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.6);
+}
+
+
 /*	Containers	==================================================*/
 #development_container {
 	background-image: url("./assets/img/sequoia.png");
 	height: 90%;
 	background-position: 72% 21%;
+	padding: 30px;
 }
 
 .text_container {
@@ -119,21 +130,27 @@ img {
 }
 
 #education_container {
-	/*background-image: url()*/
+	background-image: url("./assets/img/yosemite_falls.png");
+	background-position: 69% 52%;
+	background-size: 104%;
 }
 
 #workhistory_container {
-	/*background-image: url()*/
+	background-image: url("./assets/img/bachelor_and_graces.png");
+	background-position: 69% 52%;
+	background-size: 104%;
 }
 
 #hobbies_container {
-	/*background-image: ()*/
+	background-image: url("./assets/img/flower.png");
+	background-position: 14% 52%;
+	background-size: 124%;
 }
 
 /*	Section	==================================================*/
 
 .active-section {
-	top:0px;
+	top:0;
 }
 .navbar.active-section {
 	top:0 !important;
@@ -553,8 +570,8 @@ label {
 	margin-bottom:30px;
 	background-color:#fff;
 	color:#444;
-	padding:30px;
-	  position: relative;
+	padding: 82px;
+	position: relative;
 }
 .service-box .glyphicon {
 	font-size:60px;
