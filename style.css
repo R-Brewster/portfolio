@@ -103,6 +103,11 @@ img {
 	max-width: 100%;
 }
 
+i {
+	color: dimgray;
+	font-size: 200px;
+}
+
 /*	Containers	==================================================*/
 #development_container {
 	/*background-image: url("./assets/img/sequoia.png");*/
@@ -583,6 +588,10 @@ label {
 
 /*	Gallery	==================================================*/
 
+#gallery {
+	background-color: floralwhite;
+}
+
 #gallery img {
 	width:100%;
 	height:auto;
@@ -603,16 +612,20 @@ label {
 	max-width:100%;
 }
 #gallery .description {
-	background-color:#fff;
-	display:block;
-	padding:20px 15px;
-	color:#333;
-	text-transform:uppercase;
-	clear:both;
+	/* background-color: #fff; */
+	display: block;
+	padding: 20px 15px;
+	color: #333;
+	text-transform: uppercase;
+	clear: both;
 	position: relative;
+	font-family: 'Open Sans Condensed', sans-serif;
+	text-align: center;
+	font-size: 200%;
 }
 #gallery .caption {
 	float:left;
+	font-family: 'Open Sans Condensed', sans-serif;
 }
 #gallery .camera {
 	float:right;
@@ -621,10 +634,10 @@ label {
 	display:inline-block;
 }
 /*	Faq==================================================*/
-#faq {
-	background-color:#F9FAFD;
+#apps {
+	background-color: floralwhite;
 }
-.faq-block {
+.apps-block {
 	margin:0px;
 }
 /*	Slider	==================================================*/
@@ -708,6 +721,7 @@ label {
 /*	Contact Area	==================================================*/
 #contactarea {
 	text-align:center;
+	background-color: floralwhite;
 }
 #contactarea .maintitle p.lead {
 	margin-bottom:40px;
@@ -725,16 +739,16 @@ label {
 	font-weight:300;
 	 letter-spacing:3px;
 	 font-size:13px;
+	color: dimgray;
 }
 #contact input,#contact select,#contact textarea {
 	font-family:inherit;
 	font-size:inherit;
 	line-height:inherit;
 	width:100%;
-	border:0px;
+	border: 1px solid dimgray;
 	color:#333;
 	background-color:#fff;
-	border:0;
 }
 #contact input,#contact select {
 		height:40px;
@@ -1368,7 +1382,7 @@ img.mfp-img {
 	#hero p.lead {
 					font-size:1.5em;
 	}
-	.faq-block {
+	.apps-block {
 					margin: 0;
 	}
 }
