@@ -111,13 +111,11 @@ img {
 
 #gallery i {
 	font-size: 6em;
-	margin-left: 50%;
 }
 
 #gallery .col-md-2 {
 	margin: 2%;
 }
-
 
 /*	Containers	==================================================*/
 #development_container {
@@ -599,7 +597,6 @@ label {
 
 #gallery img {
 	width:100%;
-	margin-left: 30%;
 	height:auto;
 }
 
@@ -640,6 +637,16 @@ label {
 #slack {
 	bottom: 2vh;
     position: relative;
+}
+
+#postman {
+	bottom: -1vh;
+    position: relative;
+}
+
+#socket {
+	position: relative;
+    bottom: -1vh;
 }
 
 /*	Faq==================================================*/ 
