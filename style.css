@@ -589,9 +589,6 @@ label {
 	margin-bottom: 29px;
 }
 
-#about_me {
-
-}
 
 /*	Gallery	==================================================*/ 
 
@@ -630,49 +627,32 @@ label {
 	display:inline-block;
 }
 
-#meistertask{
-	margin-top: 3vh;
-}
-
-#slack {
-	bottom: 2vh;
-    position: relative;
-}
-
-#postman {
-	bottom: -1vh;
-    position: relative;
-}
-
-#socket {
-	position: relative;
-    bottom: -1vh;
+#gallery i:hover {
+	color: #62A87C
 }
 
 /*	Faq==================================================*/ 
 #faq {
-	background-color:#F9FAFD;
+	background-color: black;
 }
 .faq-block {
 	margin:0px;
 }
 /*	Slider	==================================================*/ 
-#slider {	
-	color:#FFF;
-}
+
 .carousel-control.left,.carousel-control.right {
 	background-image:none;
 }
 .carousel-control {
-	color:#FFF;
+	color:#62A87C;
 	opacity:1;
 	text-shadow:none;
 }
 .carousel-control:hover {
-	color:#CCC;
+	color:#62A87C;
 }
 .carousel-indicators li {
-	border-color:#FFF;
+	border-color:#62A87C;
 	margin:0 2px;
 	height:15px;
 	width:15px;
@@ -692,14 +672,18 @@ label {
 	-webkit-border-radius:10px;
 	-moz-border-radius:10px;
 	margin:0 2px;
-	background-color:#FFF;
-	border:1px solid #FFF;
+	background-color:#62A87C;
+	border:1px solid #62A87C;
 }
 .carousel.slide {
 	-moz-transition:all .2s;
 	-o-transition:all .2s;
 	-webkit-transition:all .2s;
 	transition:all .2s;
+}
+
+.carousel-inner {
+	color: white;
 }
 .carousel-inner blockquote {
 	border:none;
