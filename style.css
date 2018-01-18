@@ -123,6 +123,7 @@ img {
 	height: 90%;
 	background-position: 72% 21%;
 	padding: 30px;
+	overflow-y: scroll
 }
 
 .text_container {
@@ -589,6 +590,14 @@ label {
 	margin-bottom: 29px;
 }
 
+#development_text {
+	overflow-y: scroll;
+	height: 53vh;
+}
+
+::-webkit-scrollbar {
+	width: 0;
+}
 
 /*	Gallery	==================================================*/ 
 
