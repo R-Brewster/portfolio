@@ -565,10 +565,22 @@ label {
 /*	About	==================================================*/
 #scroll_down_glyph {
 	font-size: 1em;
+	margin-left: 1vw;
+	user-select: none;
 }
 
 #scroll_down_glyph:hover {
-	font-size: 2em;
+	color: white;
+}
+
+#scroll_up_glyph {
+	font-size: 1em;
+	margin-right: 1vw;
+	user-select: none;
+}
+
+#scroll_up_glyph:hover {
+	color: white;
 }
 
 
@@ -607,7 +619,7 @@ label {
 
 #development_text {
 	height: 53vh;
-	overflow-y: scroll;
+	overflow-y: hidden;
 }
 
 /* #development_container::-webkit-scrollbar {
