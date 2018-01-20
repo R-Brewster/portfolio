@@ -120,9 +120,14 @@ img {
 /*	Containers	==================================================*/
 #development_container {
 	background-image: url("./assets/img/sequoia.png");
-	height: 78vh;
+	height: 63vh;
 	background-position: 72% 21%;
 	padding: 30px;
+	/* overflow-y: scroll; */
+}
+
+::-webkit-scrollbar {
+	width:0;
 }
 
 .text_container {
@@ -557,6 +562,16 @@ label {
 	color: white;
 }
 
+/*	About	==================================================*/
+#scroll_down_glyph {
+	font-size: 1em;
+}
+
+#scroll_down_glyph:hover {
+	font-size: 2em;
+}
+
+
 /*	Features	==================================================*/
 #features {
 	background-color:#01B0D1;
@@ -591,18 +606,13 @@ label {
 }
 
 #development_text {
-	overflow-y: hidden;
-	height: 65vh;
+	height: 53vh;
+	overflow-y: scroll;
 }
 
-/*#development_container:focus {*/
-	/*overflow-y: scroll;*/
-	/*height: 65vh;*/
-/*}*/
-
-::-webkit-scrollbar {
-	width: 0;
-}
+/* #development_container::-webkit-scrollbar {
+	width: 2vw;
+} */
 
 /*	Gallery	==================================================*/
 

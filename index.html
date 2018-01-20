@@ -28,6 +28,10 @@
 
 	<!-- Favicon -->
 	<link rel="shortcut icon" href="#">
+
+	<!--jQuery -->
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+
 </head>
 <body>
 <!-- Begin Hero Bg -->
@@ -100,86 +104,92 @@
 </section>
 <!-- About
 	================================================== -->
-<section id="about" class="parallax section" style="background-image: url(http://themepush.com/demo/runcharity/assets/img/1.jpg);">
-	<div class="wrapsection">
-		<div class="parallax-overlay" style="background-color: black"></div>
-		<div class="container">
-			<div class="row">
-				<div class="col-md-12">
-					<!-- Title -->
-					<div class="maintitle">
-						<h2 class="section-title">About Me</h2>
-						<p class="lead">
-
-						</p>
+	<section id="about" class="parallax section" style="background-image: url(http://themepush.com/demo/runcharity/assets/img/1.jpg);">
+		<div class="wrapsection">
+			<div class="parallax-overlay" style="background-color: black"></div>
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<!-- Title -->
+						<div class="maintitle">
+							<h2 class="section-title">About Me</h2>
+							<p class="lead"></p>
+						</div>
 					</div>
-				</div>
-				<div class="col-md-4 col-sm-6">
-					<div id="development_container" class="service-box wow zoomIn" data-wow-duration="1.5s" data-wow-delay="0.1s">
-						<div class="text_container">
-							<h3>Getting Into Development</h3>
-							<div class="text-left"  id="development_text">
-								<p>
-									If you were to have told me in college that I would eventually be on a career path for web development, I would probably not have believed you. Despite having been born into a family of
-									computer engineers, programming did not seem like a very attainable career. Which is why I had decided to go to school for Ecology and Evolutionary Biology instead. Okay, not very attainable either, but my younger self did not know anything
-									about the horrors of Organic Chemistry. A programming career did not seriously enter my mind as something attainable until I was working at a geo-informational software company and learned of a web development school in Orange County.
-									The school offered a full-immersion course that could unlock a career in web development, assuming that we were up to the work. I will admit, the part of my psyche that had not yet quite recovered from sleepless nights of
-									trying to shove quantum mechanics or cellular biology into my brain trembled at the prospect of such as intensive course. But the larger part of me - the part that cannot resist wanting to know more
-									and enjoys logic puzzles - wanted to give this school a try. I count that decision as one of the best I've ever made. I loved learning Javascript and how to make dynamic applications. I have found a career I truly enjoy,
-									and I cannot wait to see where it takes me!
-								</p>
+					<!-- <div id="about_tile_container" class="col-container"> -->
+						<div>
+	
+							
+						</div>
+						<div class="col-md-4 col-sm-6">
+							<div id="development_container" class="service-box wow zoomIn" data-wow-duration="1.5s" data-wow-delay="0.1s">
+								<div class="text_container">
+									<h3>Getting Into Development</h3>
+									<div class="text-left"  id="development_text">
+										<p>
+											If you were to have told me in college that I would eventually be on a career path for web development, I would probably not have believed you. Despite having been born into a family of
+											computer engineers, programming did not seem like a very attainable career. Which is why I had decided to go to school for Ecology and Evolutionary Biology instead. Okay, not very attainable either, but my younger self did not know anything
+											about the horrors of Organic Chemistry. A programming career did not seriously enter my mind as something attainable until I was working at a geo-informational software company and learned of a web development school in Orange County.
+											The school offered a full-immersion course that could unlock a career in web development, assuming that we were up to the work. I will admit, the part of my psyche that had not yet quite recovered from sleepless nights of
+											trying to shove quantum mechanics or cellular biology into my brain trembled at the prospect of such as intensive course. But the larger part of me - the part that cannot resist wanting to know more
+											and enjoys logic puzzles - wanted to give this school a try. I count that decision as one of the best I've ever made. I loved learning Javascript and how to make dynamic applications. I have found a career I truly enjoy,
+											and I cannot wait to see where it takes me!
+										</p>
+									</div>
+								</div>
+								<span id="scroll_down_glyph" class="glyphicon glyphicon-chevron-down"></span>
 							</div>
 						</div>
-					</div>
-				</div>
-				<div class="col-md-4 col-sm-6">
-					<div id="background_container" class="service-box wow flipInY" data-wow-duration="1.5s" data-wow-delay="0.1s">
-						<span class="glyphicon glyphicon-user"></span>
-						<div class="text_container">
-							<h3>Background</h3>
-							<!--<p>-->
-							<!--Nullam posuere, libero id interdum hendrerit, tortor nisl consectetur elit.-->
-							<!--</p>-->
+						<div class="col-md-4 col-sm-6">
+							<div id="background_container" class="service-box wow flipInY" data-wow-duration="1.5s" data-wow-delay="0.1s">
+								<span class="glyphicon glyphicon-user"></span>
+								<div class="text_container">
+									<h3>Background</h3>
+									<!--<p>-->
+									<!--Nullam posuere, libero id interdum hendrerit, tortor nisl consectetur elit.-->
+									<!--</p>-->
+								</div>
+							</div>
 						</div>
-					</div>
-				</div>
-				<div class="col-md-4 col-sm-6">
-					<div id="education_container" class="service-box wow flipInY" data-wow-duration="1.5s" data-wow-delay="0.2s">
-						<span class="glyphicon glyphicon-education"></span>
-						<div class="text_container">
-							<h3>Education</h3>
-							<!--<p>-->
-							<!--Nullam posuere, libero id interdum hendrerit, tortor nisl consectetur elit.-->
-							<!--</p>-->
+						<div class="col-md-4 col-sm-6">
+							<div id="education_container" class="service-box wow flipInY" data-wow-duration="1.5s" data-wow-delay="0.2s">
+								<span class="glyphicon glyphicon-education"></span>
+								<div class="text_container">
+									<h3>Education</h3>
+									<!--<p>-->
+									<!--Nullam posuere, libero id interdum hendrerit, tortor nisl consectetur elit.-->
+									<!--</p>-->
+								</div>
+							</div>
 						</div>
-					</div>
-				</div>
-				<div class="col-md-4 col-sm-6">
-					<div id="workhistory_container" class="service-box wow flipInY" data-wow-duration="1.5s" data-wow-delay="0.3s">
-						<span class="glyphicon glyphicon-hourglass"></span>
-						<div class="text_container">
-							<h3>Work History</h3>
-							<!--<p>-->
-							<!--Nullam posuere, libero id interdum hendrerit, tortor nisl consectetur elit.-->
-							<!--</p>-->
+						<div class="col-md-4 col-sm-6">
+							<div id="workhistory_container" class="service-box wow flipInY" data-wow-duration="1.5s" data-wow-delay="0.3s">
+								<span class="glyphicon glyphicon-hourglass"></span>
+								<div class="text_container">
+									<h3>Work History</h3>
+									<!--<p>-->
+									<!--Nullam posuere, libero id interdum hendrerit, tortor nisl consectetur elit.-->
+									<!--</p>-->
+								</div>
+							</div>
 						</div>
-					</div>
-				</div>
-				<div class="col-md-4 col-sm-6">
-					<div id="hobbies_container" class="service-box wow flipInY" data-wow-duration="1.5s" data-wow-delay="0.4s">
-						<span class="glyphicon glyphicon-heart"></span>
-						<div class="text_container">
-							<h3>Hobbies</h3>
-							<!--<p>-->
-							<!--Nullam posuere, libero id interdum hendrerit, tortor nisl consectetur elit.-->
-							<!--</p>-->
+						<div class="col-md-4 col-sm-6">
+							<div id="hobbies_container" class="service-box wow flipInY" data-wow-duration="1.5s" data-wow-delay="0.4s">
+								<span class="glyphicon glyphicon-heart"></span>
+								<div class="text_container">
+									<h3>Hobbies</h3>
+									<!--<p>-->
+									<!--Nullam posuere, libero id interdum hendrerit, tortor nisl consectetur elit.-->
+									<!--</p>-->
+								</div>
+							</div>
 						</div>
-					</div>
+	
+					<!-- </div> -->
 				</div>
 			</div>
 		</div>
-	</div>
-</section>
+	</section>
 <!-- Random
 	================================================== -->
 <section class="parallax section" style="background-image: url('./assets/img/tahoe.png');">
