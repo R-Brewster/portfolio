@@ -119,11 +119,6 @@
 							<p class="lead"></p>
 						</div>
 					</div>
-					<!-- <div id="about_tile_container" class="col-container"> -->
-						<div>
-	
-							
-						</div>
 						<div class="col-md-4 col-sm-6">
 							<div id="development_container" class="service-box wow zoomIn" data-wow-duration="1.5s" data-wow-delay="0.1s">
 								<div class="text_container">
@@ -145,54 +140,59 @@
 							</div>
 						</div>
 						<div class="col-md-4 col-sm-6">
-							<div id="background_container" class="service-box wow flipInY" data-wow-duration="1.5s" data-wow-delay="0.1s">
+							<div id="background_container" class="service-box topic_tile wow flipInY" data-wow-duration="1.5s" data-wow-delay="0.1s" data-toggle="modal" target="#aboutModal"  data-whatever="Background">
 								<span class="glyphicon glyphicon-user"></span>
 								<div class="text_container">
 									<h3>Background</h3>
-									<!--<p>-->
-									<!--Nullam posuere, libero id interdum hendrerit, tortor nisl consectetur elit.-->
-									<!--</p>-->
 								</div>
 							</div>
 						</div>
+			
 						<div class="col-md-4 col-sm-6">
-							<div id="education_container" class="service-box wow flipInY" data-wow-duration="1.5s" data-wow-delay="0.2s">
+							<div id="education_container" class="service-box topic_tile wow flipInY" data-wow-duration="1.5s" data-wow-delay="0.2s" data-toggle="modal" target="#aboutModal" data-whatever="Education">
 								<span class="glyphicon glyphicon-education"></span>
 								<div class="text_container">
 									<h3>Education</h3>
-									<!--<p>-->
-									<!--Nullam posuere, libero id interdum hendrerit, tortor nisl consectetur elit.-->
-									<!--</p>-->
 								</div>
 							</div>
 						</div>
 						<div class="col-md-4 col-sm-6">
-							<div id="workhistory_container" class="service-box wow flipInY" data-wow-duration="1.5s" data-wow-delay="0.3s">
+							<div id="workhistory_container" class="service-box topic_tile wow flipInY" data-wow-duration="1.5s" data-wow-delay="0.3s" data-toggle="modal" target="#aboutModal" data-whatever="Work History">
 								<span class="glyphicon glyphicon-hourglass"></span>
 								<div class="text_container">
 									<h3>Work History</h3>
-									<!--<p>-->
-									<!--Nullam posuere, libero id interdum hendrerit, tortor nisl consectetur elit.-->
-									<!--</p>-->
 								</div>
 							</div>
 						</div>
 						<div class="col-md-4 col-sm-6">
-							<div id="hobbies_container" class="service-box wow flipInY" data-wow-duration="1.5s" data-wow-delay="0.4s">
+							<div id="hobbies_container" class="service-box topic_tile wow flipInY" data-wow-duration="1.5s" data-wow-delay="0.4s" data-toggle="modal" target="#aboutModal" data-whatever="Hobbies">
 								<span class="glyphicon glyphicon-heart"></span>
 								<div class="text_container">
 									<h3>Hobbies</h3>
-									<!--<p>-->
-									<!--Nullam posuere, libero id interdum hendrerit, tortor nisl consectetur elit.-->
-									<!--</p>-->
 								</div>
 							</div>
 						</div>
-	
-					<!-- </div> -->
 				</div>
 			</div>
 		</div>
+
+		<div class="modal fade" id="about_modal" tabindex="-1" role="dialog" aria-labelledby="about_modal">
+				<div class="modal-dialog" role="document">
+				  <div class="modal-content">
+					<div class="modal-header">
+					  <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+					  <h4 class="modal-title" id="about_modal_title"></h4>
+					</div>
+					<div class="modal-body">
+					</div>
+					<div class="modal-footer">
+					  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+					  <!-- <button type="button" class="btn btn-primary">Send message</button> -->
+					</div>
+				  </div>
+				</div>
+			  </div>
+
 	</section>
 <!-- Random
 	================================================== -->
