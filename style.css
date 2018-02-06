@@ -104,6 +104,11 @@ img {
 	color: #62A87C
 }
 
+.glyphicon:hover {
+	color: white;
+	cursor: pointer;
+}
+
 #center_text_container {
 	background-color: rgba(0,0,0, 0.6);
 	box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.6);
@@ -587,6 +592,27 @@ label {
 	color: black;
 }
 
+.modal-header {
+	color: #62A87C;
+	border-bottom: 1px solid #62A87C;
+	font-family: 'Imprima', sans-serif;
+}
+
+.modal-header .close {
+	font-size: 2em;
+}
+
+.modal-header .close:hover {
+	color: #62A87C;
+}
+
+.modal-body {
+	font-family: 'Cantata One', serif
+}
+
+.modal-footer {
+	border-top: 1px solid #62A87C;
+}
 
 /*	Features	==================================================*/
 #features {
@@ -668,7 +694,8 @@ label {
 }
 
 #gallery i:hover {
-	color: #62A87C
+	color: #62A87C;
+	cursor: pointer;
 }
 
 /*	Projects==================================================*/
@@ -725,19 +752,11 @@ label {
 .carousel-inner {
 	color: white;
 }
-.carousel-inner blockquote {
-	border:none;
-	text-align:center;
-	padding:40px 10%;
+
+.carousel-inner .item {
+	height: 50vh;
 }
-.carousel-inner blockquote small {
-	font-size:14px;
-	text-transform:uppercase;
-	font-weight:400;
-}
-.carousel-inner blockquote p {
-	font-size:36px;
-}
+
 .carousel-control .glyphicon {
 	left:50%;
 	margin-top:-10px;
@@ -758,6 +777,55 @@ label {
 	height:40px;
 	width:40px;
 }
+
+#pokemonDDRProject {
+	text-align: center;
+	margin-top: 2%;
+}
+
+#pokemonDDRProject:hover {
+	cursor:pointer;
+	transform: scale(1.1);
+}
+
+#pokemonDDRProject h1 {
+	margin-top: 4%;
+	font-family: 'Imprima', sans-serif;
+}
+
+#pokemonDDRProject p {
+	margin-top: 4%;
+	font-family: 'Cantata One', serif;
+}
+
+#pokemonDDRProject img {
+	position: relative;
+	left: 44%;
+}
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 10%;
+    background-color: white;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+    position: absolute;
+    z-index: 1;
+}
+
+.tooltip:hover .tooltiptext {
+	visibility: visible;
+	top: -5px;
+    left: 105%;
+}
+
 /*	Contact Area	==================================================*/
 #contactarea {
 	text-align:center;

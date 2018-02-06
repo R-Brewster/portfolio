@@ -92,7 +92,7 @@
 					<div id="herotext_container">
 						<h1>REBECCA BREWSTER</h1>
 						<p class="lead">
-							Front End Developer
+							FRONT END DEVELOPER
 						</p>
 						<p>
 							<a href="#" class="btn btn-default btn-lg" role="button"> View Skills </a> &nbsp; <a href="#" class="btn btn-default btn-lg" role="button">View Projects</a>
@@ -141,34 +141,34 @@
 						</div>
 						<div class="col-md-4 col-sm-6">
 							<div id="background_container" class="service-box topic_tile wow flipInY" data-wow-duration="1.5s" data-wow-delay="0.1s" data-toggle="modal" target="#aboutModal"  data-whatever="Background">
-								<span class="glyphicon glyphicon-user"></span>
+								<span id="backgroundGlyphicon" class="glyphicon glyphicon-user"></span>
 								<div class="text_container">
-									<h3>Background</h3>
+									<h3 id="backgroundText">Background</h3>
 								</div>
 							</div>
 						</div>
 			
 						<div class="col-md-4 col-sm-6">
 							<div id="education_container" class="service-box topic_tile wow flipInY" data-wow-duration="1.5s" data-wow-delay="0.2s" data-toggle="modal" target="#aboutModal" data-whatever="Education">
-								<span class="glyphicon glyphicon-education"></span>
+								<span id="educationGlyphicon" class="glyphicon glyphicon-education"></span>
 								<div class="text_container">
-									<h3>Education</h3>
+									<h3 id="educationText">Education</h3>
 								</div>
 							</div>
 						</div>
 						<div class="col-md-4 col-sm-6">
 							<div id="workhistory_container" class="service-box topic_tile wow flipInY" data-wow-duration="1.5s" data-wow-delay="0.3s" data-toggle="modal" target="#aboutModal" data-whatever="Employment">
-								<span class="glyphicon glyphicon-hourglass"></span>
+								<span id="employmentGlyphicon" class="glyphicon glyphicon-hourglass"></span>
 								<div class="text_container">
-									<h3>Employment</h3>
+									<h3 id="employmentText">Employment</h3>
 								</div>
 							</div>
 						</div>
 						<div class="col-md-4 col-sm-6">
 							<div id="hobbies_container" class="service-box topic_tile wow flipInY" data-wow-duration="1.5s" data-wow-delay="0.4s" data-toggle="modal" target="#aboutModal" data-whatever="Hobbies">
-								<span class="glyphicon glyphicon-heart"></span>
+								<span id="hobbiesGlyphicon" class="glyphicon glyphicon-heart"></span>
 								<div class="text_container">
-									<h3>Hobbies</h3>
+									<h3 id="hobbiesText">Hobbies</h3>
 								</div>
 							</div>
 						</div>
@@ -186,8 +186,6 @@
 					<div class="modal-body" id="about_modal_body">
 					</div>
 					<div class="modal-footer">
-					  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-					  <!-- <button type="button" class="btn btn-primary">Send message</button> -->
 					</div>
 				  </div>
 				</div>
@@ -262,6 +260,9 @@
 				<div class="col-md-2 text-center wow fadeIn animated">
 					<i id="slack" class="devicon-slack-plain-wordmark"></i>
 				</div>
+				<div class="col-md-2 text-center wow fadeIn animated">
+					<i class="devicon-visualstudio-plain"></i>
+				</div>
 
 			</div>
 		</div>
@@ -297,30 +298,17 @@
 					<li data-target="#Carousel" data-slide-to="2"></li>
 				</ol>
 				<div class="carousel-inner">
-					<div class="item active">
-						<blockquote>
-							<p class="lead">
-								You have not lived today until you have done something for someone who can never repay you.
-							</p>
-							<small>John Bunyan, Marathon</small>
-						</blockquote>
+					<div id="pokemonDDRProject" class="item active">
+						<img src="./assets/img/pokeball.png">
+						<h1>Pokemon Speed Battle</h1>
+						<p>Ready to see which pokemon will win? You'll need to be fast</p>
+					</div>
+					<!-- <div class="item">
+						
 					</div>
 					<div class="item">
-						<blockquote>
-							<p class="lead">
-								The simplest acts of kindness are by far more powerful then a thousand heads bowing in prayer.
-							</p>
-							<small>Mahatma Gandhi</small>
-						</blockquote>
-					</div>
-					<div class="item">
-						<blockquote>
-							<p class="lead">
-								There is no exercise better for the heart than reaching down and lifting people up.
-							</p>
-							<small>John Holmes, Organizer</small>
-						</blockquote>
-					</div>
+						
+					</div> -->
 				</div>
 				<a class="left carousel-control" href="#Carousel" data-slide="prev">
 					<span class="glyphicon glyphicon-chevron-left"></span>
