@@ -764,7 +764,7 @@ label {
 	font-size:20px;
 }
 .carousel-indicators {
-	bottom:-20px;
+	bottom:-60px;
 }
 .carousel-control {
 	background:transparent;
@@ -778,52 +778,41 @@ label {
 	width:40px;
 }
 
-#pokemonDDRProject {
+.carousel-inner > div {
 	text-align: center;
 	margin-top: 2%;
 }
 
-#pokemonDDRProject:hover {
-	cursor:pointer;
+.carousel-inner > div:hover {
+	cursor: pointer;
 	transform: scale(1.1);
 }
 
-#pokemonDDRProject h1 {
+.carousel-inner > div h1 {
 	margin-top: 4%;
 	font-family: 'Imprima', sans-serif;
 }
 
-#pokemonDDRProject p {
+.carousel-inner > div p {
 	margin-top: 4%;
 	font-family: 'Cantata One', serif;
 }
 
-#pokemonDDRProject img {
+.carousel-inner > div img {
 	position: relative;
 	left: 44%;
 }
 
-.tooltip {
-    position: relative;
-    display: inline-block;
+#pokemonGithub {
+	left: 39vw;
+	position: relative;
+	top: -4vh;
+	text-decoration: underline;
 }
 
-.tooltip .tooltiptext {
-    visibility: hidden;
-    width: 10%;
-    background-color: white;
-    color: #fff;
-    text-align: center;
-    padding: 5px 0;
-    border-radius: 6px;
-    position: absolute;
-    z-index: 1;
-}
-
-.tooltip:hover .tooltiptext {
-	visibility: visible;
-	top: -5px;
-    left: 105%;
+#pokemonGithub:hover {
+	color: #62A87C;
+	cursor: pointer;
 }
 
 /*	Contact Area	==================================================*/
