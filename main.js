@@ -1,13 +1,15 @@
 $(document).ready(initialize);
 
 function initialize() {
-    //Add click handler
+    //Add click handlers
     $("#scroll_up_glyph").on('click', scrollUp);
     $("#scroll_down_glyph").on('click', scrollDown);
     $(".topic_tile").on('click', modalData);
 
-    $("#pokemonDDRProject").on('click',  ()=> {window.open('http://rebeccabrewster.com/apps/POKEMON-SPEED-BATTLE')});
+    $("#pokemonDDRProject").on('click', () => {window.open('http://dev.rebeccabrewster.com/POKEMON-SPEED-BATTLE')})
     // $("#pokemonGithub").on('click',  () => {window.open('http://rebeccabrewster.com/pokemon')});
+    $("#clueMemoryMatchProject").on('click',  () => {window.open('http://dev.rebeccabrewster.com/CLUE-MEMORY-MATCH')})
+    // $("#clueGithub").on('click',  () => {window.open('http://rebeccabrewster.com/pokemon')});
 }
 
 function scrollUp() {
