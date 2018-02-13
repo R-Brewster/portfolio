@@ -778,52 +778,36 @@ label {
 	width:40px;
 }
 
-#pokemonDDRProject {
+.project {
 	text-align: center;
 	margin-top: 2%;
 }
 
-#pokemonDDRProject:hover {
+.project:hover {
 	cursor:pointer;
 	transform: scale(1.1);
 }
 
-#pokemonDDRProject h1 {
+.project h1 {
 	margin-top: 4%;
 	font-family: 'Imprima', sans-serif;
 }
 
-#pokemonDDRProject p {
+.project p {
 	margin-top: 4%;
 	font-family: 'Cantata One', serif;
 }
 
-#pokemonDDRProject img {
+.project img {
 	position: relative;
+}
+
+#pokemonDDRProject img {
 	left: 44%;
 }
 
-.tooltip {
-    position: relative;
-    display: inline-block;
-}
-
-.tooltip .tooltiptext {
-    visibility: hidden;
-    width: 10%;
-    background-color: white;
-    color: #fff;
-    text-align: center;
-    padding: 5px 0;
-    border-radius: 6px;
-    position: absolute;
-    z-index: 1;
-}
-
-.tooltip:hover .tooltiptext {
-	visibility: visible;
-	top: -5px;
-    left: 105%;
+#clueMemoryMatchProject img {
+	left: 24%;
 }
 
 /*	Contact Area	==================================================*/

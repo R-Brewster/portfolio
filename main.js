@@ -1,12 +1,13 @@
 $(document).ready(initialize);
 
 function initialize() {
-    //Add click handler
+    //Add click handlers
     $("#scroll_up_glyph").on('click', scrollUp);
     $("#scroll_down_glyph").on('click', scrollDown);
     $(".topic_tile").on('click', modalData);
 
-    $("#pokemonDDRProject").on('click',  window.open('http://rebeccabrewster.com/pokemon'))
+    $("#pokemonDDRProject").on('click', () => {window.open('http://dev.rebeccabrewster.com/POKEMON-SPEED-BATTLE')})
+    $("#clueMemoryMatchProject").on('click',  () => {window.open('http://dev.rebeccabrewster.com/CLUE-MEMORY-MATCH')})
 }
 
 function scrollUp() {
