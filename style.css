@@ -764,7 +764,7 @@ label {
 	font-size:20px;
 }
 .carousel-indicators {
-	bottom:-20px;
+	bottom:-60px;
 }
 .carousel-control {
 	background:transparent;
@@ -778,26 +778,44 @@ label {
 	width:40px;
 }
 
+<<<<<<< HEAD
 .project {
+=======
+.carousel-inner > div {
+>>>>>>> a5bf11c10c87abaefb5d075ad116712f3e9124ca
 	text-align: center;
 	margin-top: 2%;
 }
 
+<<<<<<< HEAD
 .project:hover {
 	cursor:pointer;
 	transform: scale(1.1);
 }
 
 .project h1 {
+=======
+.carousel-inner > div:hover {
+	cursor: pointer;
+	transform: scale(1.1);
+}
+
+.carousel-inner > div h1 {
+>>>>>>> a5bf11c10c87abaefb5d075ad116712f3e9124ca
 	margin-top: 4%;
 	font-family: 'Imprima', sans-serif;
 }
 
+<<<<<<< HEAD
 .project p {
+=======
+.carousel-inner > div p {
+>>>>>>> a5bf11c10c87abaefb5d075ad116712f3e9124ca
 	margin-top: 4%;
 	font-family: 'Cantata One', serif;
 }
 
+<<<<<<< HEAD
 .project img {
 	position: relative;
 }
@@ -808,6 +826,23 @@ label {
 
 #clueMemoryMatchProject img {
 	left: 24%;
+=======
+.carousel-inner > div img {
+	position: relative;
+	left: 44%;
+}
+
+#pokemonGithub {
+	left: 39vw;
+	position: relative;
+	top: -4vh;
+	text-decoration: underline;
+}
+
+#pokemonGithub:hover {
+	color: #62A87C;
+	cursor: pointer;
+>>>>>>> a5bf11c10c87abaefb5d075ad116712f3e9124ca
 }
 
 /*	Contact Area	==================================================*/
