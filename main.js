@@ -6,13 +6,10 @@ function initialize() {
     $("#scroll_down_glyph").on('click', scrollDown);
     $(".topic_tile").on('click', modalData);
 
-<<<<<<< HEAD
     $("#pokemonDDRProject").on('click', () => {window.open('http://dev.rebeccabrewster.com/POKEMON-SPEED-BATTLE')})
-    $("#clueMemoryMatchProject").on('click',  () => {window.open('http://dev.rebeccabrewster.com/CLUE-MEMORY-MATCH')})
-=======
-    $("#pokemonDDRProject").on('click',  ()=> {window.open('http://rebeccabrewster.com/apps/POKEMON-SPEED-BATTLE')});
     // $("#pokemonGithub").on('click',  () => {window.open('http://rebeccabrewster.com/pokemon')});
->>>>>>> a5bf11c10c87abaefb5d075ad116712f3e9124ca
+    $("#clueMemoryMatchProject").on('click',  () => {window.open('http://dev.rebeccabrewster.com/CLUE-MEMORY-MATCH')})
+    // $("#clueGithub").on('click',  () => {window.open('http://rebeccabrewster.com/pokemon')});
 }
 
 function scrollUp() {
