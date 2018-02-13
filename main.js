@@ -6,7 +6,7 @@ function initialize() {
     $("#scroll_down_glyph").on('click', scrollDown);
     $(".topic_tile").on('click', modalData);
 
-    $("#pokemonDDRProject").on('click',  ()=> {window.open('http://rebeccabrewster.com/apps/POKEMON-SPEED-BATTLE')});
+    $("#pokemonDDRProject").on('click',  ()=> {window.open('http://dev.rebeccabrewster.com/apps/POKEMON-SPEED-BATTLE')});
     // $("#pokemonGithub").on('click',  () => {window.open('http://rebeccabrewster.com/pokemon')});
 }
 
