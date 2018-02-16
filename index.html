@@ -138,6 +138,14 @@
 								<span id="scroll_down_glyph" class="glyphicon glyphicon-chevron-down"></span>
 							</div>
 						</div>
+						<div id='into_development_tile' class="col-md-4 col-sm-6">
+								<div id="into_development_container" class="service-box topic_tile wow flipInY" data-wow-duration="1.5s" data-wow-delay="0.1s" data-toggle="modal" target="#aboutModal"  data-whatever="Development">
+									<span id="developmentGlyphicon" class="glyphicon glyphicon-tasks"></span>
+									<div class="text_container">
+										<h3 id="backgroundText">Development</h3>
+									</div>
+								</div>
+							</div>
 						<div class="col-md-4 col-sm-6">
 							<div id="background_container" class="service-box topic_tile wow flipInY" data-wow-duration="1.5s" data-wow-delay="0.1s" data-toggle="modal" target="#aboutModal"  data-whatever="Background">
 								<span id="backgroundGlyphicon" class="glyphicon glyphicon-user"></span>
@@ -200,7 +208,7 @@
 			<div class="row">
 				<div class="col-md-12 sol-sm-12">
 					<div class="maintitle">
-						<div id="center_text_container">
+						<div id="center_text_container" style='color: transparent;'>
 							<h3 class="section-title justtitle">Lorem ipsum dolor sit amet.</h3>
 							<p class="lead bottom0 wow bounceInUp">
 								Fusce fermentum lectus id turpis suscipit, ut egestas magna volutpat. Donec a purus tellus. Nunc ut dolor eu est gravida auctor quis vitae.
@@ -225,41 +233,41 @@
 					</div>
 				</div>
 			</div>
-			<div class="row" style="padding-left: 15vh;">
-				<div class="col-md-2 text-center wow fadeIn animated">
+			<div id='skills_icons' class="row">
+				<div class="col-md-2 col-xs-3 text-center wow fadeIn animated">
 					<i class="devicon-amazonwebservices-plain-wordmark"></i>
 				</div>
-				<div class="col-md-2 text-center wow fadeIn animated">
+				<div class="col-md-2 col-xs-3 text-center wow fadeIn animated">
 					<i class="devicon-bootstrap-plain-wordmark"></i>
 				</div>
-				<div class="col-md-2 text-center wow fadeIn animated">
+				<div class="col-md-2 col-xs-3 text-center wow fadeIn animated">
 					<i class="devicon-chrome-plain-wordmark"></i>
 				</div>
-				<div class="col-md-2 text-center wow fadeIn animated">
+				<div class="col-md-2 col-xs-3 text-center wow fadeIn animated">
 					<i class="devicon-css3-plain-wordmark"></i>
 				</div>
-				<div class="col-md-2 text-center wow fadeIn animated">
+				<div class="col-md-2 col-xs-3 text-center wow fadeIn animated">
 					<i class="devicon-git-plain-wordmark"></i>
 				</div>
-				<div class="col-md-2 text-center wow fadeIn animated">
+				<div class="col-md-2 col-xs-3 text-center wow fadeIn animated">
 					<i class="devicon-github-plain"></i>
 				</div>
-				<div class="col-md-2 text-center wow fadeIn animated">
+				<div class="col-md-2 col-xs-3 text-center wow fadeIn animated">
 					<i class="devicon-html5-plain-wordmark"></i>
 				</div>
-				<div class="col-md-2 text-center wow fadeIn animated">
+				<div class="col-md-2 col-xs-3 text-center wow fadeIn animated">
 					<i class="devicon-javascript-plain"></i>
 				</div>
-				<div class="col-md-2 text-center wow fadeIn animated">
+				<div class="col-md-2 col-xs-3 text-center wow fadeIn animated">
 					<i class="devicon-jquery-plain"></i>
 				</div>
-				<div class="col-md-2 text-center wow fadeIn animated">
+				<div class="col-md-2 col-xs-3 text-center wow fadeIn animated">
 					<i class="devicon-react-original-wordmark"></i>
 				</div>
-				<div class="col-md-2 text-center wow fadeIn animated">
+				<div class="col-md-2 col-xs-3 text-center wow fadeIn animated">
 					<i id="slack" class="devicon-slack-plain-wordmark"></i>
 				</div>
-				<div class="col-md-2 text-center wow fadeIn animated">
+				<div class="col-md-2 col-xs-3 text-center wow fadeIn animated">
 					<i class="devicon-visualstudio-plain"></i>
 				</div>
 
@@ -274,7 +282,7 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-md-12 text-center">
-					<div id="center_text_container">
+					<div id="center_text_container" style='color: transparent;'>
 						<h3 class="section-title justtitle">Lorem ipsum dolor sit amet.</h3>
 						<p class="lead bottom0 wow bounceInUp">
 							Fusce fermentum lectus id turpis suscipit, ut egestas magna volutpat. Donec a purus tellus. Nunc ut dolor eu est gravida auctor quis vitae.
@@ -329,7 +337,7 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-md-12 sol-sm-12 text-center">
-					<div id="center_text_container">
+					<div id="center_text_container" style='color: transparent;'>
 						<h3 class="section-title justtitle">Lorem ipsum dolor sit amet.</h3>
 						<p class="lead bottom0 wow bounceInUp">
 							Fusce fermentum lectus id turpis suscipit, ut egestas magna volutpat. Donec a purus tellus. Nunc ut dolor eu est gravida auctor quis vitae.
@@ -397,7 +405,7 @@
 <!-- Credits
 =============================================== -->
 <section id="credits" class="text-center">
-	<span class="social wow zoomIn">
+	<!-- <span class="social wow zoomIn">
 	<a href="#"><i class="fa fa-facebook"></i></a>
 	<a href="#"><i class="fa fa-twitter"></i></a>
 	<a href="#"><i class="fa fa-skype"></i></a>
@@ -405,7 +413,7 @@
 	<a href="#"><i class="fa fa-pinterest"></i></a>
 	<a href="#"><i class="fa fa-google-plus"></i></a>
 	</span><br/>
-	Copyright &copy; <a href="#">Your Agency</a>
+	Copyright &copy; <a href="#">Your Agency</a> -->
 	<br/>Template By <i class="fa fa-heart"></i> WowThemes.Net
 </section>
 <!-- Bootstrap core JavaScript

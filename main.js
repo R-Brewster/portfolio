@@ -43,6 +43,9 @@ function modalData(event) {
 function modalText(topic) {
     var modalText = [
         {
+            topic:'Development',
+            text: 'If you were to have told me in college that I would eventually be on a career path for web development, I would probably not have believed you. Despite having been born into a family of computer engineers, programming did not seem like a very attainable career. Which is why I had decided to go to school for Ecology and Evolutionary Biology instead. Okay, not very attainable either, but my younger self did not know anything about the horrors of Organic Chemistry. A programming career did not seriously enter my mind as something attainable until I was working at a geo-informational software company and learned of a web development school in Orange County. The school offered a full-immersion course that could unlock a career in web development, assuming that we were up to the work. I will admit, the part of my psyche that had not yet quite recovered from sleepless nights of trying to shove quantum mechanics or cellular biology into my brain trembled at the prospect of such as intensive course. But the larger part of me - the part that cannot resist wanting to know more and enjoys logic puzzles - wanted to give this school a try. I count that decision as one of the best I\'ve ever made. I loved learning Javascript and how to make dynamic applications. I have found a career I truly enjoy,and I cannot wait to see where it takes me!'},
+        {
             topic:'Background',
             text: 'I have been fortunate enough to have lived in California my whole life. I was born in the foothills of San Diego County, a place full of oak trees and creeks, and plenty of wildlife for a curious child to explore. My family includes parents who have both had careers as computer engineers and a twin brother, who was dragged along on many of the aforementioned backyard wilderness adventures.'},
         {

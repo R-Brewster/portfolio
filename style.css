@@ -110,8 +110,9 @@ img {
 }
 
 #center_text_container {
-	background-color: rgba(0,0,0, 0.6);
-	box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.6);
+	/* Add back in when text is added */
+	/* background-color: rgba(0,0,0, 0.6);
+	box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.6); */
 }
 
 #gallery i {
@@ -122,6 +123,10 @@ img {
 	margin: 2%;
 }
 
+#skills_icons {
+	padding-left: 15vh;
+}
+
 /*	Containers	==================================================*/
 #development_container {
 	background-image: url("./assets/img/sequoia.png");
@@ -129,6 +134,10 @@ img {
 	background-position: 72% 21%;
 	padding: 30px;
 	/* overflow-y: scroll; */
+}
+
+#into_development_tile {
+	display: none;
 }
 
 ::-webkit-scrollbar {
@@ -1391,10 +1400,10 @@ img.mfp-img {
 	}
 }
 @media (max-width:767px) {
-	.section,.parallax.section .container {
+	/* .section,.parallax.section .container {
 		padding-top:30px;
 		padding-bottom:30px;
-	}
+	} */
 	.service-box,.img-responsive,.carousel {
 		margin-bottom:30px;
 	}
@@ -1416,11 +1425,12 @@ img.mfp-img {
 	#hero .herotext {
 		padding: 90px 0px;
 	}
-}
-@media (max-width:767px) {
+
 	body {
 		font-size:14px;
+		width: 111vw;
 	}
+
 	h1 {
 		font-size:28px;
 	}
@@ -1442,9 +1452,9 @@ img.mfp-img {
 	p.lead {
 		font-size:18px;
 	}
-	.section {
+	/* .section {
 		padding:60px 0;
-	}
+	} */
 	.maintitle p.lead {
 		margin-bottom:40px;
 	}
@@ -1459,6 +1469,37 @@ img.mfp-img {
 		max-width:690px;
 		padding-left:30px;
 		padding-right:30px;
+	}
+
+	#herotext_container {
+		width: 100%;
+	}
+
+	#hero img {
+		display: none;
+	}
+
+	#hero .btn {
+		width: min-content;
+		font-size: 10px;
+	}
+	
+	#into_development_tile {
+		display: block;
+	}
+
+	#into_development_container {
+		background-image: url("./assets/img/snowmelt.png");
+		background-position: 69% 52%;
+		background-size: 135%;
+	}
+
+	#development_container {
+		display: none;
+	}
+
+	#skills_icons {
+		padding: 0;
 	}
 }
 @media (max-width:490px) {
