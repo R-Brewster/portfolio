@@ -567,6 +567,16 @@ label {
 	color: white;
 }
 
+#profile {
+    width: 16%;
+    position: absolute;
+    top: 20%;
+	left: 3%;
+	animation: fadeIn 2s;
+	border: 11px solid rgba(0, 0, 0, 0.4);
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);
+}
+
 /*	About	==================================================*/
 #scroll_down_glyph {
 	font-size: 1em;
