@@ -9,7 +9,9 @@ function initialize() {
     $("#pokemonDDRProject").on('click', () => {window.open('http://dev.rebeccabrewster.com/apps/POKEMON-SPEED-BATTLE')})
     // $("#pokemonGithub").on('click',  () => {window.open('http://rebeccabrewster.com/pokemon')});
     $("#clueMemoryMatchProject").on('click',  () => {window.open('http://dev.rebeccabrewster.com/apps/CLUE-MEMORY-MATCH')})
-    // $("#clueGithub").on('click',  () => {window.open('http://rebeccabrewster.com/pokemon')});
+    // $("#clueGithub").on('click',  () => {window.open('http://rebeccabrewster.com/pokemon')}); $("#clueMemoryMatchProject").on('click',  () => {window.open
+    $("#helloOperatorProject").on('click',  () => {window.open('http://hello-operator.net')})
+    // $("#helloOperatorProject").on('click',  () => {window.open('http://rebeccabrewster.com/pokemon')});
 }
 
 function scrollUp() {

@@ -725,6 +725,9 @@ label {
 	margin:0px;
 }
 /*	Slider	==================================================*/
+#carousel {
+	width: 50vw;
+}
 
 .carousel-control.left,.carousel-control.right {
 	background-image:none;
@@ -770,10 +773,11 @@ label {
 
 .carousel-inner {
 	color: white;
+	width: 100%
 }
 
 .carousel-inner .item {
-	height: 50vh;
+	height: 60vh;
 }
 
 .carousel-control .glyphicon {
@@ -822,11 +826,28 @@ label {
 }
 
 #pokemonDDRProject img {
-	left: 44%;
+	/* left: 44%; */
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
 }
 
 #clueMemoryMatchProject img {
-	left: 24%;
+	/* left: 24%; */
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+}
+
+#helloOperatorProject img {
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+    /* width: 50%; */
+	width: 27%;
+    /* left: 36%; */
 }
 
 /*	Contact Area	==================================================*/
@@ -1423,7 +1444,7 @@ img.mfp-img {
 		margin:0;
 	}
 	#hero .herotext {
-		padding: 90px 0px;
+		padding: 0px 0px;
 	}
 
 	body {
@@ -1500,6 +1521,13 @@ img.mfp-img {
 
 	#skills_icons {
 		padding: 0;
+	}
+
+}
+
+@media(max-width: 767px) and (orientation: landscape) {
+	.project img {
+		width: 10%;
 	}
 }
 @media (max-width:490px) {
