@@ -110,8 +110,9 @@ img {
 }
 
 #center_text_container {
-	background-color: rgba(0,0,0, 0.6);
-	box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.6);
+	/* Add back in when text is added */
+	/* background-color: rgba(0,0,0, 0.6);
+	box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.6); */
 }
 
 #gallery i {
@@ -122,6 +123,10 @@ img {
 	margin: 2%;
 }
 
+#skills_icons {
+	padding-left: 15vh;
+}
+
 /*	Containers	==================================================*/
 #development_container {
 	background-image: url("./assets/img/sequoia.png");
@@ -129,6 +134,10 @@ img {
 	background-position: 72% 21%;
 	padding: 30px;
 	/* overflow-y: scroll; */
+}
+
+#into_development_tile {
+	display: none;
 }
 
 ::-webkit-scrollbar {
@@ -567,6 +576,16 @@ label {
 	color: white;
 }
 
+#profile {
+    width: 16%;
+    position: absolute;
+    top: 20%;
+	left: 3%;
+	animation: fadeIn 2s;
+	border: 11px solid rgba(0, 0, 0, 0.4);
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);
+}
+
 /*	About	==================================================*/
 #scroll_down_glyph {
 	font-size: 1em;
@@ -706,6 +725,9 @@ label {
 	margin:0px;
 }
 /*	Slider	==================================================*/
+#carousel {
+	width: 50vw;
+}
 
 .carousel-control.left,.carousel-control.right {
 	background-image:none;
@@ -751,10 +773,11 @@ label {
 
 .carousel-inner {
 	color: white;
+	width: 100%
 }
 
 .carousel-inner .item {
-	height: 50vh;
+	height: 60vh;
 }
 
 .carousel-control .glyphicon {
@@ -803,11 +826,28 @@ label {
 }
 
 #pokemonDDRProject img {
-	left: 44%;
+	/* left: 44%; */
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
 }
 
 #clueMemoryMatchProject img {
-	left: 24%;
+	/* left: 24%; */
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+}
+
+#helloOperatorProject img {
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+    /* width: 50%; */
+	width: 27%;
+    /* left: 36%; */
 }
 
 /*	Contact Area	==================================================*/
@@ -1381,10 +1421,10 @@ img.mfp-img {
 	}
 }
 @media (max-width:767px) {
-	.section,.parallax.section .container {
+	/* .section,.parallax.section .container {
 		padding-top:30px;
 		padding-bottom:30px;
-	}
+	} */
 	.service-box,.img-responsive,.carousel {
 		margin-bottom:30px;
 	}
@@ -1404,13 +1444,14 @@ img.mfp-img {
 		margin:0;
 	}
 	#hero .herotext {
-		padding: 90px 0px;
+		padding: 0px 0px;
 	}
-}
-@media (max-width:767px) {
+
 	body {
 		font-size:14px;
+		width: 111vw;
 	}
+
 	h1 {
 		font-size:28px;
 	}
@@ -1432,9 +1473,9 @@ img.mfp-img {
 	p.lead {
 		font-size:18px;
 	}
-	.section {
+	/* .section {
 		padding:60px 0;
-	}
+	} */
 	.maintitle p.lead {
 		margin-bottom:40px;
 	}
@@ -1449,6 +1490,44 @@ img.mfp-img {
 		max-width:690px;
 		padding-left:30px;
 		padding-right:30px;
+	}
+
+	#herotext_container {
+		width: 100%;
+	}
+
+	#hero img {
+		display: none;
+	}
+
+	#hero .btn {
+		width: min-content;
+		font-size: 10px;
+	}
+	
+	#into_development_tile {
+		display: block;
+	}
+
+	#into_development_container {
+		background-image: url("./assets/img/snowmelt.png");
+		background-position: 69% 52%;
+		background-size: 135%;
+	}
+
+	#development_container {
+		display: none;
+	}
+
+	#skills_icons {
+		padding: 0;
+	}
+
+}
+
+@media(max-width: 767px) and (orientation: landscape) {
+	.project img {
+		width: 10%;
 	}
 }
 @media (max-width:490px) {
