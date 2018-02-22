@@ -12,6 +12,12 @@ function initialize() {
     // $("#clueGithub").on('click',  () => {window.open('http://rebeccabrewster.com/pokemon')}); $("#clueMemoryMatchProject").on('click',  () => {window.open
     $("#helloOperatorProject").on('click',  () => {window.open('http://hello-operator.net')})
     // $("#helloOperatorProject").on('click',  () => {window.open('http://rebeccabrewster.com/pokemon')});
+
+    // if( $(window).width() < 800) {
+    //     $('#development_container').removeClass('wow', 'zoomIn');
+    //     $("#into_development_container").removeClass('wow', 'flipInY');
+    //     $(".skill").removeClass('wow', 'fadeIn', 'animated');
+    // }
 }
 
 function scrollUp() {

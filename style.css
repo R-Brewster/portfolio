@@ -1375,9 +1375,9 @@ img.mfp-img {
 	padding-top:0;
 }
 /*	Common	==================================================*/
-.section {
+/* .section {
 
-}
+} */
 .wrapsection {
 	padding-top:140px;
 	padding-bottom:140px;
@@ -1449,7 +1449,7 @@ img.mfp-img {
 
 	body {
 		font-size:14px;
-		width: 111vw;
+		/* width: 111vw; */
 	}
 
 	h1 {
@@ -1502,7 +1502,7 @@ img.mfp-img {
 
 	#hero .btn {
 		width: min-content;
-		font-size: 10px;
+		font-size: 7px;
 	}
 	
 	#into_development_tile {
