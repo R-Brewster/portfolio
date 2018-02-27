@@ -110,8 +110,9 @@ img {
 }
 
 #center_text_container {
-	background-color: rgba(0,0,0, 0.6);
-	box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.6);
+	/* Add back in when text is added */
+	/* background-color: rgba(0,0,0, 0.6);
+	box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.6); */
 }
 
 #gallery i {
@@ -122,6 +123,10 @@ img {
 	margin: 2%;
 }
 
+#skills_icons {
+	padding-left: 15vh;
+}
+
 /*	Containers	==================================================*/
 #development_container {
 	background-image: url("./assets/img/sequoia.png");
@@ -129,6 +134,10 @@ img {
 	background-position: 72% 21%;
 	padding: 30px;
 	/* overflow-y: scroll; */
+}
+
+#into_development_tile {
+	display: none;
 }
 
 ::-webkit-scrollbar {
@@ -162,7 +171,7 @@ img {
 #hobbies_container {
 	background-image: url("./assets/img/flower.png");
 	background-position: 14% 52%;
-	background-size: 124%;
+	background-size: 128%;
 }
 
 /*	Section	==================================================*/
@@ -567,6 +576,16 @@ label {
 	color: white;
 }
 
+#profile {
+    width: 16%;
+    position: absolute;
+    top: 20%;
+	left: 3%;
+	animation: fadeIn 2s;
+	border: 11px solid rgba(0, 0, 0, 0.4);
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);
+}
+
 /*	About	==================================================*/
 #scroll_down_glyph {
 	font-size: 1em;
@@ -706,6 +725,9 @@ label {
 	margin:0px;
 }
 /*	Slider	==================================================*/
+#carousel {
+	width: 50vw;
+}
 
 .carousel-control.left,.carousel-control.right {
 	background-image:none;
@@ -751,10 +773,11 @@ label {
 
 .carousel-inner {
 	color: white;
+	width: 100%
 }
 
 .carousel-inner .item {
-	height: 50vh;
+	height: 60vh;
 }
 
 .carousel-control .glyphicon {
@@ -778,41 +801,53 @@ label {
 	width:40px;
 }
 
-.carousel-inner > div {
+.project {
 	text-align: center;
 	margin-top: 2%;
 }
 
-.carousel-inner > div:hover {
-	cursor: pointer;
+.project:hover {
+	cursor:pointer;
 	transform: scale(1.1);
 }
 
-.carousel-inner > div h1 {
+.project h1 {
 	margin-top: 4%;
 	font-family: 'Imprima', sans-serif;
 }
 
-.carousel-inner > div p {
+.project p {
 	margin-top: 4%;
 	font-family: 'Cantata One', serif;
 }
 
-.carousel-inner > div img {
+.project img {
 	position: relative;
-	left: 44%;
 }
 
-#pokemonGithub {
-	left: 39vw;
-	position: relative;
-	top: -4vh;
-	text-decoration: underline;
+#pokemonDDRProject img {
+	/* left: 44%; */
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 15%;
 }
 
-#pokemonGithub:hover {
-	color: #62A87C;
-	cursor: pointer;
+#clueMemoryMatchProject img {
+	/* left: 24%; */
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+}
+
+#helloOperatorProject img {
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+    /* width: 50%; */
+	width: 27%;
+    /* left: 36%; */
 }
 
 /*	Contact Area	==================================================*/
@@ -1340,9 +1375,9 @@ img.mfp-img {
 	padding-top:0;
 }
 /*	Common	==================================================*/
-.section {
+/* .section {
 
-}
+} */
 .wrapsection {
 	padding-top:140px;
 	padding-bottom:140px;
@@ -1352,6 +1387,7 @@ img.mfp-img {
 .parallax.section .container{
 	position: relative;
 	z-index: 4;
+	color: white;
 }
 .justtitle {
 	margin-top:80px;
@@ -1362,7 +1398,7 @@ img.mfp-img {
 	background-size: cover;
 	/*overflow: hidden;*/
 	z-index: 1;
-	color:#fff;
+	/* color:black; */
 }
 .parallax-overlay {
 	position: absolute;
@@ -1386,10 +1422,10 @@ img.mfp-img {
 	}
 }
 @media (max-width:767px) {
-	.section,.parallax.section .container {
+	/* .section,.parallax.section .container {
 		padding-top:30px;
 		padding-bottom:30px;
-	}
+	} */
 	.service-box,.img-responsive,.carousel {
 		margin-bottom:30px;
 	}
@@ -1409,13 +1445,14 @@ img.mfp-img {
 		margin:0;
 	}
 	#hero .herotext {
-		padding: 90px 0px;
+		padding: 0px 0px;
 	}
-}
-@media (max-width:767px) {
+
 	body {
 		font-size:14px;
+		/* width: 111vw; */
 	}
+
 	h1 {
 		font-size:28px;
 	}
@@ -1437,9 +1474,9 @@ img.mfp-img {
 	p.lead {
 		font-size:18px;
 	}
-	.section {
+	/* .section {
 		padding:60px 0;
-	}
+	} */
 	.maintitle p.lead {
 		margin-bottom:40px;
 	}
@@ -1455,6 +1492,44 @@ img.mfp-img {
 		padding-left:30px;
 		padding-right:30px;
 	}
+
+	#herotext_container {
+		width: 100%;
+	}
+
+	#hero img {
+		display: none;
+	}
+
+	#hero .btn {
+		width: min-content;
+		font-size: 7px;
+	}
+	
+	#into_development_tile {
+		display: block;
+	}
+
+	#into_development_container {
+		background-image: url("./assets/img/snowmelt.png");
+		background-position: 69% 52%;
+		background-size: 135%;
+	}
+
+	#development_container {
+		display: none;
+	}
+
+	#skills_icons {
+		padding: 0;
+	}
+
+}
+
+@media(max-width: 767px) and (orientation: landscape) {
+	.project img {
+		width: 10%;
+	}
 }
 @media (max-width:490px) {
 	.wow {
@@ -1465,13 +1540,26 @@ img.mfp-img {
 		-ms-animation: none !important;
 		animation: none !important;
 	}
+
+	.flipInY {
+		visibility: visible !important;
+		-webkit-animation: none !important;
+		-moz-animation: none !important;
+		-o-animation: none !important;
+		-ms-animation: none !important;
+		animation: none !important;
+	}
+<<<<<<< HEAD
+=======
+
+>>>>>>> a227e3607d413205ca7eb5c8dd76d6a6ae6ef624
 	.container {
 		max-width:430px;
 		padding-left:30px;
 		padding-right:30px;
 	}
 	#hero h1 {
-		font-size:38px;
+		font-size: 34px;
 	}
 	#hero p.lead {
 		font-size:1.5em;
