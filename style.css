@@ -626,7 +626,8 @@ label {
 }
 
 .modal-body {
-	font-family: 'Cantata One', serif
+	font-family: 'Cantata One', serif;
+	overflow-y: scroll;
 }
 
 .modal-footer {
