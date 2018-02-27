@@ -539,9 +539,9 @@ label {
 	color: #e0e1dd;
 	text-shadow: -1px 0 #595959, 0 1px #595959, 1px 0 #595959, 0 -1px #595959;
 }
-#hero .herotext {
-	padding:160px 0;
-}
+/*#hero .herotext {*/
+	/*padding:160px 0;*/
+/*}*/
 #hero h1 {
 	font-size: 50px;
 	/*background-color: rgba(224, 225, 221, 0.2);*/
@@ -577,10 +577,10 @@ label {
 }
 
 #profile {
-    width: 16%;
-    position: absolute;
-    top: 20%;
-	left: 3%;
+    /*width: 16%;*/
+    /*position: absolute;*/
+    /*top: 20%;*/
+	/*left: 3%;*/
 	animation: fadeIn 2s;
 	border: 11px solid rgba(0, 0, 0, 0.4);
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);
@@ -1549,10 +1549,6 @@ img.mfp-img {
 		-ms-animation: none !important;
 		animation: none !important;
 	}
-<<<<<<< HEAD
-=======
-
->>>>>>> a227e3607d413205ca7eb5c8dd76d6a6ae6ef624
 	.container {
 		max-width:430px;
 		padding-left:30px;
