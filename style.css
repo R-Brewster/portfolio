@@ -110,8 +110,9 @@ img {
 }
 
 #center_text_container {
-	background-color: rgba(0,0,0, 0.6);
-	box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.6);
+	/* Add back in when text is added */
+	/* background-color: rgba(0,0,0, 0.6);
+	box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.6); */
 }
 
 #gallery i {
@@ -120,6 +121,10 @@ img {
 
 #gallery .col-md-2 {
 	margin: 2%;
+}
+
+#skills_icons {
+	padding-left: 15vh;
 }
 
 /*	Containers	==================================================*/
@@ -131,6 +136,10 @@ img {
 	/* overflow-y: scroll; */
 }
 
+#into_development_tile {
+	display: none;
+}
+
 ::-webkit-scrollbar {
 	width:0;
 }
@@ -138,8 +147,19 @@ img {
 .text_container {
 	background-color: rgba(0, 0, 0, 0.4);
 	box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.4);
+	width: max-content;
+	/* overflow-y: scroll; */
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.text_container_development {
+	background-color: rgba(0, 0, 0, 0.4);
+	box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.4);
 	width: 100%;
-	/*overflow-y: scroll;*/
+	/* overflow-y: scroll; */
+	/*margin-left: auto;*/
+	/*margin-right: auto;*/
 }
 
 #background_container {
@@ -162,7 +182,7 @@ img {
 #hobbies_container {
 	background-image: url("./assets/img/flower.png");
 	background-position: 14% 52%;
-	background-size: 124%;
+	background-size: 128%;
 }
 
 /*	Section	==================================================*/
@@ -530,9 +550,9 @@ label {
 	color: #e0e1dd;
 	text-shadow: -1px 0 #595959, 0 1px #595959, 1px 0 #595959, 0 -1px #595959;
 }
-#hero .herotext {
-	padding:160px 0;
-}
+/*#hero .herotext {*/
+	/*padding:160px 0;*/
+/*}*/
 #hero h1 {
 	font-size: 50px;
 	/*background-color: rgba(224, 225, 221, 0.2);*/
@@ -565,6 +585,16 @@ label {
 #hero .btn:hover {
 	background-color: rgba(98,168,124,0.8);
 	color: white;
+}
+
+#profile {
+    /*width: 16%;*/
+    /*position: absolute;*/
+    /*top: 20%;*/
+	/*left: 3%;*/
+	animation: fadeIn 2s;
+	border: 11px solid rgba(0, 0, 0, 0.4);
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);
 }
 
 /*	About	==================================================*/
@@ -607,7 +637,8 @@ label {
 }
 
 .modal-body {
-	font-family: 'Cantata One', serif
+	font-family: 'Cantata One', serif;
+	overflow-y: scroll;
 }
 
 .modal-footer {
@@ -706,6 +737,9 @@ label {
 	margin:0px;
 }
 /*	Slider	==================================================*/
+#carousel {
+	width: 50vw;
+}
 
 .carousel-control.left,.carousel-control.right {
 	background-image:none;
@@ -751,10 +785,11 @@ label {
 
 .carousel-inner {
 	color: white;
+	width: 100%
 }
 
 .carousel-inner .item {
-	height: 50vh;
+	height: 60vh;
 }
 
 .carousel-control .glyphicon {
@@ -764,7 +799,7 @@ label {
 	font-size:20px;
 }
 .carousel-indicators {
-	bottom:-20px;
+	bottom:-60px;
 }
 .carousel-control {
 	background:transparent;
@@ -778,52 +813,53 @@ label {
 	width:40px;
 }
 
-#pokemonDDRProject {
+.project {
 	text-align: center;
 	margin-top: 2%;
 }
 
-#pokemonDDRProject:hover {
+.project:hover {
 	cursor:pointer;
 	transform: scale(1.1);
 }
 
-#pokemonDDRProject h1 {
+.project h1 {
 	margin-top: 4%;
 	font-family: 'Imprima', sans-serif;
 }
 
-#pokemonDDRProject p {
+.project p {
 	margin-top: 4%;
 	font-family: 'Cantata One', serif;
 }
 
-#pokemonDDRProject img {
+.project img {
 	position: relative;
-	left: 44%;
 }
 
-.tooltip {
-    position: relative;
-    display: inline-block;
+#pokemonDDRProject img {
+	/* left: 44%; */
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 15%;
 }
 
-.tooltip .tooltiptext {
-    visibility: hidden;
-    width: 10%;
-    background-color: white;
-    color: #fff;
-    text-align: center;
-    padding: 5px 0;
-    border-radius: 6px;
-    position: absolute;
-    z-index: 1;
+#clueMemoryMatchProject img {
+	/* left: 24%; */
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
 }
 
-.tooltip:hover .tooltiptext {
-	visibility: visible;
-	top: -5px;
-    left: 105%;
+#helloOperatorProject img {
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+    /* width: 50%; */
+	width: 27%;
+    /* left: 36%; */
 }
 
 /*	Contact Area	==================================================*/
@@ -1351,9 +1387,9 @@ img.mfp-img {
 	padding-top:0;
 }
 /*	Common	==================================================*/
-.section {
+/* .section {
 
-}
+} */
 .wrapsection {
 	padding-top:140px;
 	padding-bottom:140px;
@@ -1363,6 +1399,7 @@ img.mfp-img {
 .parallax.section .container{
 	position: relative;
 	z-index: 4;
+	color: white;
 }
 .justtitle {
 	margin-top:80px;
@@ -1373,7 +1410,7 @@ img.mfp-img {
 	background-size: cover;
 	/*overflow: hidden;*/
 	z-index: 1;
-	color:#fff;
+	/* color:black; */
 }
 .parallax-overlay {
 	position: absolute;
@@ -1397,10 +1434,10 @@ img.mfp-img {
 	}
 }
 @media (max-width:767px) {
-	.section,.parallax.section .container {
+	/* .section,.parallax.section .container {
 		padding-top:30px;
 		padding-bottom:30px;
-	}
+	} */
 	.service-box,.img-responsive,.carousel {
 		margin-bottom:30px;
 	}
@@ -1420,13 +1457,14 @@ img.mfp-img {
 		margin:0;
 	}
 	#hero .herotext {
-		padding: 90px 0px;
+		padding: 0px 0px;
 	}
-}
-@media (max-width:767px) {
+
 	body {
 		font-size:14px;
+		/* width: 111vw; */
 	}
+
 	h1 {
 		font-size:28px;
 	}
@@ -1448,9 +1486,9 @@ img.mfp-img {
 	p.lead {
 		font-size:18px;
 	}
-	.section {
+	/* .section {
 		padding:60px 0;
-	}
+	} */
 	.maintitle p.lead {
 		margin-bottom:40px;
 	}
@@ -1466,9 +1504,56 @@ img.mfp-img {
 		padding-left:30px;
 		padding-right:30px;
 	}
+
+	#herotext_container {
+		width: 100%;
+	}
+
+	#hero img {
+		display: none;
+	}
+
+	#hero .btn {
+		width: min-content;
+		font-size: 7px;
+	}
+	
+	#into_development_tile {
+		display: block;
+	}
+
+	#into_development_container {
+		background-image: url("./assets/img/snowmelt.png");
+		background-position: 69% 52%;
+		background-size: 135%;
+	}
+
+	#development_container {
+		display: none;
+	}
+
+	#skills_icons {
+		padding: 0;
+	}
+
+}
+
+@media(max-width: 767px) and (orientation: landscape) {
+	.project img {
+		width: 10%;
+	}
 }
 @media (max-width:490px) {
 	.wow {
+		visibility: visible !important;
+		-webkit-animation: none !important;
+		-moz-animation: none !important;
+		-o-animation: none !important;
+		-ms-animation: none !important;
+		animation: none !important;
+	}
+
+	.flipInY {
 		visibility: visible !important;
 		-webkit-animation: none !important;
 		-moz-animation: none !important;
@@ -1482,7 +1567,7 @@ img.mfp-img {
 		padding-right:30px;
 	}
 	#hero h1 {
-		font-size:38px;
+		font-size: 34px;
 	}
 	#hero p.lead {
 		font-size:1.5em;

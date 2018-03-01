@@ -54,27 +54,27 @@
 				<span class="icon-bar"></span>
 			</button>
 			<!-- Your Logo -->
-			<a href="#hero" class="navbar-brand">Rebecca Brewster </a>
+			<a href="#" class="navbar-brand">Rebecca Brewster </a>
 		</div>
 		<!-- Start Navigation -->
 		<nav class="collapse navbar-collapse bs-navbar-collapse navbar-right" role="navigation">
 			<ul class="nav navbar-nav">
-				<li>
-					<a href="#hero">Home</a>
+				<li class="nav_section">
+					<a href="#">Home</a>
 				</li>
-				<li>
+				<li class="nav_section">
 					<a href="#about">About Me</a>
 				</li>
-				<li>
+				<li class="nav_section">
 					<a href="#gallery">Skills</a>
 				</li>
-				<li>
+				<li class="nav_section">
 					<a href="#projects">Projects</a>
 				</li>
 				<!--<li>-->
 					<!--<a href="#faq">FAQ</a>-->
 				<!--</li>-->
-				<li>
+				<li class="nav_section">
 					<a href="#contactarea">Contact</a>
 				</li>
 			</ul>
@@ -87,6 +87,11 @@
 <section id="hero" class="section">
 	<div class="container">
 		<div class="row">
+			<div class="col-lg-2 col-md-3 col-sm-3">
+				<img id='profile' src='./assets/img/profile_color.png'>
+			</div>
+		</div>
+		<div class="row">
 			<div class="col-md-5">
 				<div class="herotext">
 					<div id="herotext_container">
@@ -95,19 +100,17 @@
 							FRONT END DEVELOPER
 						</p>
 						<p>
-							<a href="#" class="btn btn-default btn-lg" role="button"> View Skills </a> &nbsp; <a href="#" class="btn btn-default btn-lg" role="button">View Projects</a>
+							<a href="https://github.com/R-Brewster" target="_blank" class="btn btn-default btn-lg" role="button"> Github </a> &nbsp; <a href="https://www.linkedin.com/in/rebecca-brewster/" target="_blank" class="btn btn-default btn-lg" role="button">Linkedin</a>
 						</p>
 					</div>
 				</div>
-			</div>
-			<div class="col-md-7">
 			</div>
 		</div>
 	</div>
 </section>
 <!-- About
 	================================================== -->
-	<section id="about" class="parallax section" style="background-image: url(http://themepush.com/demo/runcharity/assets/img/1.jpg);">
+	<section id="about" class="parallax section">
 		<div class="wrapsection">
 			<div class="parallax-overlay" style="background-color: black"></div>
 			<div class="container">
@@ -121,7 +124,7 @@
 					</div>
 						<div class="col-md-4 col-sm-6">
 							<div id="development_container" class="service-box wow zoomIn" data-wow-duration="1.5s" data-wow-delay="0.1s">
-								<div class="text_container">
+								<div class="text_container_development">
 									<h3>Getting Into Development</h3>
 									<div class="text-left"  id="development_text">
 										<p>
@@ -139,6 +142,14 @@
 								<span id="scroll_down_glyph" class="glyphicon glyphicon-chevron-down"></span>
 							</div>
 						</div>
+						<div id='into_development_tile' class="col-md-4 col-sm-6">
+								<div id="into_development_container" class="service-box topic_tile wow flipInY" data-wow-duration="1.5s" data-wow-delay="0.1s" data-toggle="modal" target="#aboutModal"  data-whatever="Development">
+									<span id="developmentGlyphicon" class="glyphicon glyphicon-tasks"></span>
+									<div class="text_container">
+										<h3 id="backgroundText">Development</h3>
+									</div>
+								</div>
+							</div>
 						<div class="col-md-4 col-sm-6">
 							<div id="background_container" class="service-box topic_tile wow flipInY" data-wow-duration="1.5s" data-wow-delay="0.1s" data-toggle="modal" target="#aboutModal"  data-whatever="Background">
 								<span id="backgroundGlyphicon" class="glyphicon glyphicon-user"></span>
@@ -201,9 +212,9 @@
 			<div class="row">
 				<div class="col-md-12 sol-sm-12">
 					<div class="maintitle">
-						<div id="center_text_container">
+						<div id="center_text_container" style='color: transparent;'>
 							<h3 class="section-title justtitle">Lorem ipsum dolor sit amet.</h3>
-							<p class="lead bottom0 wow bounceInUp">
+							<p class="lead bottom0">
 								Fusce fermentum lectus id turpis suscipit, ut egestas magna volutpat. Donec a purus tellus. Nunc ut dolor eu est gravida auctor quis vitae.
 							</p>
 						</div>
@@ -226,41 +237,41 @@
 					</div>
 				</div>
 			</div>
-			<div class="row" style="padding-left: 15vh;">
-				<div class="col-md-2 text-center wow fadeIn animated">
+			<div id='skills_icons' class="row">
+				<div class="col-md-2 col-xs-3 skill text-center wow fadeIn animated">
 					<i class="devicon-amazonwebservices-plain-wordmark"></i>
 				</div>
-				<div class="col-md-2 text-center wow fadeIn animated">
+				<div class="col-md-2 col-xs-3 skill text-center wow fadeIn animated">
 					<i class="devicon-bootstrap-plain-wordmark"></i>
 				</div>
-				<div class="col-md-2 text-center wow fadeIn animated">
+				<div class="col-md-2 col-xs-3 skill text-center wow fadeIn animated">
 					<i class="devicon-chrome-plain-wordmark"></i>
 				</div>
-				<div class="col-md-2 text-center wow fadeIn animated">
+				<div class="col-md-2 col-xs-3 skill text-center wow fadeIn animated">
 					<i class="devicon-css3-plain-wordmark"></i>
 				</div>
-				<div class="col-md-2 text-center wow fadeIn animated">
+				<div class="col-md-2 col-xs-3 skill text-center wow fadeIn animated">
 					<i class="devicon-git-plain-wordmark"></i>
 				</div>
-				<div class="col-md-2 text-center wow fadeIn animated">
+				<div class="col-md-2 col-xs-3 skill text-center wow fadeIn animated">
 					<i class="devicon-github-plain"></i>
 				</div>
-				<div class="col-md-2 text-center wow fadeIn animated">
+				<div class="col-md-2 col-xs-3 skill text-center wow fadeIn animated">
 					<i class="devicon-html5-plain-wordmark"></i>
 				</div>
-				<div class="col-md-2 text-center wow fadeIn animated">
+				<div class="col-md-2 col-xs-3 skill text-center wow fadeIn animated">
 					<i class="devicon-javascript-plain"></i>
 				</div>
-				<div class="col-md-2 text-center wow fadeIn animated">
+				<div class="col-md-2 col-xs-3 skill text-center wow fadeIn animated">
 					<i class="devicon-jquery-plain"></i>
 				</div>
-				<div class="col-md-2 text-center wow fadeIn animated">
+				<div class="col-md-2 col-xs-3 skill text-center wow fadeIn animated">
 					<i class="devicon-react-original-wordmark"></i>
 				</div>
-				<div class="col-md-2 text-center wow fadeIn animated">
+				<div class="col-md-2 col-xs-3 skill text-center wow fadeIn animated">
 					<i id="slack" class="devicon-slack-plain-wordmark"></i>
 				</div>
-				<div class="col-md-2 text-center wow fadeIn animated">
+				<div class="col-md-2 col-xs-3 skill text-center wow fadeIn animated">
 					<i class="devicon-visualstudio-plain"></i>
 				</div>
 
@@ -275,9 +286,9 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-md-12 text-center">
-					<div id="center_text_container">
+					<div id="center_text_container" style='color: transparent;'>
 						<h3 class="section-title justtitle">Lorem ipsum dolor sit amet.</h3>
-						<p class="lead bottom0 wow bounceInUp">
+						<p class="lead bottom0">
 							Fusce fermentum lectus id turpis suscipit, ut egestas magna volutpat. Donec a purus tellus. Nunc ut dolor eu est gravida auctor quis vitae.
 						</p>
 					</div>
@@ -298,17 +309,26 @@
 					<li data-target="#Carousel" data-slide-to="2"></li>
 				</ol>
 				<div class="carousel-inner">
-					<div id="pokemonDDRProject" class="item active">
+					<div id="helloOperatorProject" class="item active project">
+							<img src="./assets/img/hello_operator.png">
+							<h1>Hello, Operator</h1>
+							<p>Are you and your fellow agent a good enough team to complete the mission?</p>
+							<p id="clueGithub">Github</p>
+					</div>
+
+					<div id="clueMemoryMatchProject" class="item project">
+							<img src="./assets/img/clue_small.png">
+							<h1>Clue Memory Match</h1>
+							<p>A party at the Boddy Mansion goes awry. It's up to you to find out who is responsible</p>
+							<p id="clueGithub">Github</p>
+					</div>
+
+					<div id="pokemonDDRProject" class="item project">
 						<img src="./assets/img/pokeball.png">
 						<h1>Pokemon Speed Battle</h1>
 						<p>Ready to see which pokemon will win? You'll need to be fast</p>
-					</div>
-					<!-- <div class="item">
-						
-					</div>
-					<div class="item">
-						
-					</div> -->
+						<p id="pokemonGithub">Github</p>
+					</div>	
 				</div>
 				<a class="left carousel-control" href="#Carousel" data-slide="prev">
 					<span class="glyphicon glyphicon-chevron-left"></span>
@@ -328,9 +348,9 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-md-12 sol-sm-12 text-center">
-					<div id="center_text_container">
+					<div id="center_text_container" style='color: transparent;'>
 						<h3 class="section-title justtitle">Lorem ipsum dolor sit amet.</h3>
-						<p class="lead bottom0 wow bounceInUp">
+						<p class="lead bottom0">
 							Fusce fermentum lectus id turpis suscipit, ut egestas magna volutpat. Donec a purus tellus. Nunc ut dolor eu est gravida auctor quis vitae.
 						</p>
 					</div>
@@ -350,7 +370,7 @@
 					<div class="maintitle">
 						<h3 class="section-title">Get in Touch</h3>
 						<p class="lead" style="color: #62A87C">
-							If you have questions about our events, don't hesitate to send us your message. This is a real working contact form, test it!
+							I would love the chance to talk to you, please send me a message
 						</p>
 					</div>
 					<form id="contact" name="contact" method="post" class="text-left">
@@ -396,7 +416,7 @@
 <!-- Credits
 =============================================== -->
 <section id="credits" class="text-center">
-	<span class="social wow zoomIn">
+	<!-- <span class="social wow zoomIn">
 	<a href="#"><i class="fa fa-facebook"></i></a>
 	<a href="#"><i class="fa fa-twitter"></i></a>
 	<a href="#"><i class="fa fa-skype"></i></a>
@@ -404,7 +424,7 @@
 	<a href="#"><i class="fa fa-pinterest"></i></a>
 	<a href="#"><i class="fa fa-google-plus"></i></a>
 	</span><br/>
-	Copyright &copy; <a href="#">Your Agency</a>
+	Copyright &copy; <a href="#">Your Agency</a> -->
 	<br/>Template By <i class="fa fa-heart"></i> WowThemes.Net
 </section>
 <!-- Bootstrap core JavaScript
