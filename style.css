@@ -147,8 +147,19 @@ img {
 .text_container {
 	background-color: rgba(0, 0, 0, 0.4);
 	box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.4);
+	width: max-content;
+	/* overflow-y: scroll; */
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.text_container_development {
+	background-color: rgba(0, 0, 0, 0.4);
+	box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.4);
 	width: 100%;
-	/*overflow-y: scroll;*/
+	/* overflow-y: scroll; */
+	/*margin-left: auto;*/
+	/*margin-right: auto;*/
 }
 
 #background_container {
