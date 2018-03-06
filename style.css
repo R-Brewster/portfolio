@@ -125,7 +125,7 @@ img {
 }
 
 #skills_icons {
-	padding-left: 15vh;
+	padding-left: 8vh;
 }
 
 /*	Containers	==================================================*/
@@ -158,13 +158,10 @@ img {
 	background-color: rgba(0, 0, 0, 0.4);
 	box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.4);
 	width: 100%;
-<<<<<<< HEAD
 	height: 100%;
-=======
 	/* overflow-y: scroll; */
 	/*margin-left: auto;*/
 	/*margin-right: auto;*/
->>>>>>> cd26c33f9a343837eff93f3b6e65230d52a27c76
 }
 
 #background_container {
@@ -684,7 +681,7 @@ label {
 }
 
 #development_text {
-	height: 83%;
+	height: 87%;
 	overflow-y: hidden;
 	line-height: 1.6em;
 }
@@ -848,7 +845,7 @@ label {
 	display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 15%;
+    width: 11%;
 }
 
 #clueMemoryMatchProject img {
@@ -864,7 +861,7 @@ label {
     margin-left: auto;
     margin-right: auto;
     /* width: 50%; */
-	width: 27%;
+	width: 16%;
     /* left: 36%; */
 }
 
