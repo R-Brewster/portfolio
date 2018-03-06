@@ -15,6 +15,7 @@ body {
 	overflow-x:hidden;
 	line-height:1.5;
 }
+
 a {
 	color:#62a87c;
 	cursor:pointer;
@@ -148,7 +149,7 @@ img {
 	background-color: rgba(0, 0, 0, 0.4);
 	box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.4);
 	width: 100%;
-	/*overflow-y: scroll;*/
+	height: 100%;
 }
 
 #background_container {
@@ -171,7 +172,7 @@ img {
 #hobbies_container {
 	background-image: url("./assets/img/flower.png");
 	background-position: 14% 52%;
-	background-size: 128%;
+	background-size: 137%;
 }
 
 /*	Section	==================================================*/
@@ -667,8 +668,9 @@ label {
 }
 
 #development_text {
-	height: 53vh;
+	height: 83%;
 	overflow-y: hidden;
+	line-height: 1.6em;
 }
 
 /* #development_container::-webkit-scrollbar {
@@ -1549,10 +1551,6 @@ img.mfp-img {
 		-ms-animation: none !important;
 		animation: none !important;
 	}
-<<<<<<< HEAD
-=======
-
->>>>>>> a227e3607d413205ca7eb5c8dd76d6a6ae6ef624
 	.container {
 		max-width:430px;
 		padding-left:30px;
