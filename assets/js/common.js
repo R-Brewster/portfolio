@@ -69,6 +69,11 @@ function wheel(e) {
     var o = e.wheelDeltaX || 0,
         r = e.wheelDeltaY || 0;
     o || r || (r = e.wheelDelta || 0), Math.abs(o) > 1.2 && (o *= stepsize / 120), Math.abs(r) > 1.2 && (r *= stepsize / 120), scrollArray(n, -o, -r), e.preventDefault()
+    
+    if($("body").hasClass('modal-open')) {
+        removeEvent("mousedown", mousedown);
+        removeEvent("mousewheel", wheel);
+    }
 }
 
 function keydown(e) {
@@ -117,6 +122,11 @@ function keydown(e) {
 
 function mousedown(e) {
     activeElement = e.target
+    
+    if($("body").hasClass('modal-open')) {
+        removeEvent("mousedown", mousedown);
+        removeEvent("mousewheel", wheel);
+    }
 }
 
 function setCache(e, t) {

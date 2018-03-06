@@ -15,6 +15,7 @@ body {
 	overflow-x:hidden;
 	line-height:1.5;
 }
+
 a {
 	color:#62a87c;
 	cursor:pointer;
@@ -124,7 +125,7 @@ img {
 }
 
 #skills_icons {
-	padding-left: 15vh;
+	padding-left: 8vh;
 }
 
 /*	Containers	==================================================*/
@@ -157,6 +158,7 @@ img {
 	background-color: rgba(0, 0, 0, 0.4);
 	box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.4);
 	width: 100%;
+	height: 100%;
 	/* overflow-y: scroll; */
 	/*margin-left: auto;*/
 	/*margin-right: auto;*/
@@ -182,7 +184,7 @@ img {
 #hobbies_container {
 	background-image: url("./assets/img/flower.png");
 	background-position: 14% 52%;
-	background-size: 128%;
+	background-size: 137%;
 }
 
 /*	Section	==================================================*/
@@ -679,8 +681,9 @@ label {
 }
 
 #development_text {
-	height: 53vh;
+	height: 87%;
 	overflow-y: hidden;
+	line-height: 1.6em;
 }
 
 /* #development_container::-webkit-scrollbar {
@@ -841,10 +844,16 @@ label {
 #pokemonDDRProject img {
 	/* left: 44%; */
 	display: block;
+<<<<<<< HEAD
 	margin-left: auto;
 	margin-right: auto;
 	width: 40%;
 
+=======
+    margin-left: auto;
+    margin-right: auto;
+    width: 11%;
+>>>>>>> 49e57410c6f756a265f05102e434b81bbd7cb7bb
 }
 
 #clueMemoryMatchProject img {
@@ -860,7 +869,7 @@ label {
     margin-left: auto;
     margin-right: auto;
     /* width: 50%; */
-	width: 27%;
+	width: 16%;
     /* left: 36%; */
 }
 
