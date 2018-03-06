@@ -148,8 +148,23 @@ img {
 .text_container {
 	background-color: rgba(0, 0, 0, 0.4);
 	box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.4);
+	width: max-content;
+	/* overflow-y: scroll; */
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.text_container_development {
+	background-color: rgba(0, 0, 0, 0.4);
+	box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.4);
 	width: 100%;
+<<<<<<< HEAD
 	height: 100%;
+=======
+	/* overflow-y: scroll; */
+	/*margin-left: auto;*/
+	/*margin-right: auto;*/
+>>>>>>> cd26c33f9a343837eff93f3b6e65230d52a27c76
 }
 
 #background_container {
@@ -540,9 +555,9 @@ label {
 	color: #e0e1dd;
 	text-shadow: -1px 0 #595959, 0 1px #595959, 1px 0 #595959, 0 -1px #595959;
 }
-#hero .herotext {
-	padding:160px 0;
-}
+/*#hero .herotext {*/
+	/*padding:160px 0;*/
+/*}*/
 #hero h1 {
 	font-size: 50px;
 	/*background-color: rgba(224, 225, 221, 0.2);*/
@@ -578,10 +593,10 @@ label {
 }
 
 #profile {
-    width: 16%;
-    position: absolute;
-    top: 20%;
-	left: 3%;
+    /*width: 16%;*/
+    /*position: absolute;*/
+    /*top: 20%;*/
+	/*left: 3%;*/
 	animation: fadeIn 2s;
 	border: 11px solid rgba(0, 0, 0, 0.4);
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);
@@ -627,7 +642,8 @@ label {
 }
 
 .modal-body {
-	font-family: 'Cantata One', serif
+	font-family: 'Cantata One', serif;
+	overflow-y: scroll;
 }
 
 .modal-footer {
