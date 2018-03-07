@@ -2474,7 +2474,8 @@ $.format = function deprecated() {
 $(function() {
 	function validateEmailText(value,element,param)
 	{
-		if(value == /.+[@].+[.].+/)
+		let regex = /.+[@].+[.].+/
+		if(regex.test(value))
 		{
 			return true
 		}
