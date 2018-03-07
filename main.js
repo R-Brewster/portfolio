@@ -6,6 +6,7 @@ function initialize() {
     $("#scroll_down_glyph").on('click', scrollDown);
     $(".topic_tile").on('click', modalData);
     $(".nav_section").on('click', closeNavBar);
+    $(".skill").on('click', () => {window.open('./assets/docs/rebecca_brewster_resume.pdf')})
 
     $("#pokemonDDRProject").on('click', () => {window.open('http://dev.rebeccabrewster.com/apps/POKEMON-SPEED-BATTLE')});
     // $("#pokemonGithub").on('click',  () => {window.open('https://github.com/collinwong53/POKEMON-SPEED-BATTLE')});
@@ -13,12 +14,6 @@ function initialize() {
     $("#clueGithub").on('click',  () => {window.open('https://github.com/R-Brewster/CLUE-MEMORY-MATCH')});
     $("#helloOperatorProject").on('click',  () => {window.open('http://hello-operator.net')})
     // $("#helloOperatorProject").on('click',  () => {window.open('http://rebeccabrewster.com/pokemon')});
-
-    // if( $(window).width() < 800) {
-    //     $('#development_container').removeClass('wow', 'zoomIn');
-    //     $("#into_development_container").removeClass('wow', 'flipInY');
-    //     $(".skill").removeClass('wow', 'fadeIn', 'animated');
-    // }
 }
 
 function scrollUp() {
@@ -62,7 +57,7 @@ function modalText(topic) {
             text: 'I attended UC Merced to earn by Bachelors, the newest of the UC system and the one with an exciting pioneering energy I could not resist. My degreee ended up being a B.S. in Biology with an emphasis in ecology and evolutionary biology. \n My more recent educational experience was attending Learning Fuze, a web development school in Irvine. I was a part of their full-immersion course where we were taught not only how to code in Javascript with methodologies such as OOP and MVC, but also in an agile structured environment with such technologies as Github. Several of my projects are featured below.'},
         {
             topic: 'Employment',
-            text: 'My first job was a very unique one, I was a summer Park Ranger Intern in Yosemite National Park. I led tours around the park, staffed visitor centers, and conducted campfire talks. I was able to really develop my communication skills, which have proven invaluable since. \n My student job for the majority of college was as a marketing intern for the admissions department. I once again was able to improve my communication skills, as well as my writing and creative abilites as I produced content for various social media accounts. This was also my chance to learn new technologies as I dabbled in video editing, publication creation, and marketing campaigns. \n Upon graduating from college, I sort of continued my student marketing position as a college admissions recruiter, traveling to various schools throughout Los Angeles. The position was a good opportunity to learn about CRM systems, particularly Salesforce, and to see a variety of marketing plans in action. This position was just for the college recruitment season, and as it was wrapping up, I learned about Esri. \n My most recent work experience was with Esri, a company that specializes in making GIS software for gathering and analyzing geographic-based data. I was in their events and marketing department, working with their tradeshow events team. The majority of my time was spent preparing for the large annual conference, assisting conference attendees showcasing their work, or helping with internal tasks such as purchase requests. It was this position that ultimately set me on the path to becoming a developer. I ended up talking to several of the software developers at the company, and could not help but think that programming - actually making the software of a company - and not just supporting it - sounded pretty intriguing.'},
+            text: 'My first job was a very unique one, I was a summer Park Ranger Intern in Yosemite National Park. I led tours, staffed visitor centers, and conducted campfire talks. I was able to really develop my communication skills, which have proven invaluable since. \n My student job for the majority of college was as a marketing intern for the admissions department. This was my chance to learn new technologies as I dabbled in video editing, publication creation, and marketing campaigns. \n Upon graduating from college, I sort of continued my student marketing position as a college admissions recruiter, traveling to various schools throughout Los Angeles. The position was a good opportunity to learn about CRM systems, particularly Salesforce, and to see a variety of marketing plans in action. \n My most recent work experience was with Esri, a company that specializes in making GIS software. I was in their events and marketing department, working for their tradeshow team. The majority of my time was spent preparing for the large annual conference, or helping with internal tasks such as purchase requests. It was this position that ultimately set me on the path to becoming a developer. I ended up talking to several of the software developers at the company, and could not help but think that programming - actually making the software of a company - and not just supporting it - sounded pretty intriguing.'},
         {
             topic: 'Hobbies',
             text: 'Outside of the workplace I generally spend my time either making things or exploring. I love learning old lace making or sewing techniques - something about designing stitch patterns and seeing them come alive is just so fascinating. But I eventually want to get outside, so I really enjoy hiking and exploring the wilderness. All of the photos on this site are ones I\'ve taken on various hikes. Identifying native plant species and birds is also a favorite pastime, so I\'ll go ahead and apologize in advance if I ever interrupt you because you pass by an interesting flower.'},

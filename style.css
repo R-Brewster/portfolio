@@ -125,13 +125,19 @@ img {
 }
 
 #skills_icons {
-	padding-left: 8vh;
+	/* padding-left: 8vh; */
+	margin-left: 10%;
 }
+
+/* #skills_icons > div {
+	margin-left: 0;
+	margin-right: 0;
+} */
 
 /*	Containers	==================================================*/
 #development_container {
 	background-image: url("./assets/img/sequoia.png");
-	height: 63vh;
+	height: 84vh;
 	background-position: 72% 21%;
 	padding: 30px;
 	/* overflow-y: scroll; */
@@ -641,6 +647,7 @@ label {
 .modal-body {
 	font-family: 'Cantata One', serif;
 	overflow-y: scroll;
+	white-space: pre-wrap;
 }
 
 .modal-footer {
@@ -681,7 +688,7 @@ label {
 }
 
 #development_text {
-	height: 87%;
+	height: 89%;
 	overflow-y: hidden;
 	line-height: 1.6em;
 }
@@ -842,35 +849,24 @@ label {
 }
 
 #pokemonDDRProject img {
-	/* left: 44%; */
 	display: block;
-<<<<<<< HEAD
-	margin-left: auto;
-	margin-right: auto;
-	width: 40%;
-
-=======
     margin-left: auto;
     margin-right: auto;
-    width: 11%;
->>>>>>> 49e57410c6f756a265f05102e434b81bbd7cb7bb
+    width: 28%;
 }
 
 #clueMemoryMatchProject img {
-	/* left: 24%; */
 	display: block;
     margin-left: auto;
     margin-right: auto;
-	width: 36%;
+	width: 28%;
 }
 
 #helloOperatorProject img {
 	display: block;
     margin-left: auto;
     margin-right: auto;
-    /* width: 50%; */
-	width: 16%;
-    /* left: 36%; */
+	width: 26%;
 }
 
 .gitHub:hover {
@@ -1549,7 +1545,7 @@ img.mfp-img {
 	}
 
 	#skills_icons {
-		padding: 0;
+		margin-left: 4%;
 	}
 
 }
