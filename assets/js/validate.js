@@ -2475,6 +2475,18 @@ $.format = function deprecated() {
 
 
 $(function() {
+	function validateEmail(value,element,param)
+	{
+		if(value == param)
+		{
+			return true
+		}
+		else
+		{
+			return false
+		}
+	}
+	jQuery.validator.addMethod("validateEmailText", validateEmail, "Please add character");
     $('#contact').validate({
         rules: {
             name: {
@@ -2482,8 +2494,9 @@ $(function() {
                 minlength: 2
             },
             email: {
-                required: true,
-                email: true
+				required: true,
+				email: true,
+				validateEmail: '@',
             },
             message: {
                 required: true
@@ -2495,7 +2508,8 @@ $(function() {
                 minlength: "Your name must consist of at least 2 characters"
             },
             email: {
-                required: "Please, add your e-mail address."
+				required: "Please, add your e-mail address.",
+				validateEmail: 'Please enter a valid email address'
             },
             message: {
                 required: "Please, add your message.",
@@ -2509,14 +2523,14 @@ $(function() {
                 url:'./assets/php_mailer/mail_handler.php',
                 success: function() {
                     $('#contact :input').attr('disabled', 'disabled');
-                    $('#contact').fadeTo( "slow", 0.15, function() {
+                    $('#contact').fadeTo( "slow", 1, function() {
                         $(this).find(':input').attr('disabled', 'disabled');
                         $(this).find('label').css('cursor','default');
                         $('#success').fadeIn();
                     });
                 },
                 error: function() {
-                    $('#contact').fadeTo( "slow", 0.15, function() {
+                    $('#contact').fadeTo( "slow", 1, function() {
                         $('#error').fadeIn();
                     });
                 }

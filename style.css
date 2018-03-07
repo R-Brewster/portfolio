@@ -129,15 +129,23 @@ img {
 	margin-left: 10%;
 }
 
+.pic {
+	height: 60vh;
+}
+
 /* #skills_icons > div {
 	margin-left: 0;
 	margin-right: 0;
 } */
 
 /*	Containers	==================================================*/
+#top_dev_container {
+	height: 600px;
+}
+
 #development_container {
 	background-image: url("./assets/img/sequoia.png");
-	height: 74vh;
+	height: 600px;
 	background-position: 72% 21%;
 	padding: 30px;
 	/* overflow-y: scroll; */
@@ -173,6 +181,7 @@ img {
 #background_container {
 	background-image: url("./assets/img/taft_point.png");
 	background-position: 56% 14%;
+	background-size: 104%;
 }
 
 #education_container {
@@ -1548,6 +1557,9 @@ img.mfp-img {
 		margin-left: 4%;
 	}
 
+	#top_dev_container {
+		height:0;
+	}
 }
 
 @media(max-width: 767px) and (orientation: landscape) {

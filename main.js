@@ -9,11 +9,11 @@ function initialize() {
     $(".skill").on('click', () => {window.open('./assets/docs/rebecca_brewster_resume.pdf')})
 
     $("#pokemonDDRProject").on('click', () => {window.open('http://dev.rebeccabrewster.com/apps/POKEMON-SPEED-BATTLE')});
-    // $("#pokemonGithub").on('click',  () => {window.open('https://github.com/collinwong53/POKEMON-SPEED-BATTLE')});
+    $("#pokemonGithub").on('click',  () => {window.open('https://github.com/collinwong53/POKEMON-SPEED-BATTLE')});
     $("#clueMemoryMatchProject").on('click',  () => {window.open('http://dev.rebeccabrewster.com/apps/CLUE-MEMORY-MATCH')});
     $("#clueGithub").on('click',  () => {window.open('https://github.com/R-Brewster/CLUE-MEMORY-MATCH')});
     $("#helloOperatorProject").on('click',  () => {window.open('http://hello-operator.net')})
-    // $("#helloOperatorProject").on('click',  () => {window.open('http://rebeccabrewster.com/pokemon')});
+    $("#helloOperatorGithub").on('click',  () => {window.open('https://github.com/michaeljlin/hello-operator')});
 }
 
 function scrollUp() {
