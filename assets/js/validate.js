@@ -2471,13 +2471,10 @@ $.format = function deprecated() {
 }(jQuery));
 
 
-
-
-
 $(function() {
-	function validateEmail(value,element,param)
+	function validateEmailText(value,element,param)
 	{
-		if(value == param)
+		if(value === param)
 		{
 			return true
 		}
@@ -2486,7 +2483,7 @@ $(function() {
 			return false
 		}
 	}
-	jQuery.validator.addMethod("validateEmailText", validateEmail, "Please add character");
+	jQuery.validator.addMethod("validateEmail", validateEmailText, "Please add valid email");
     $('#contact').validate({
         rules: {
             name: {
