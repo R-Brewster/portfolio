@@ -2519,19 +2519,19 @@ $(function() {
         },
         messages: {
             name: {
-                required: "Please, add your name.",
+                required: "Please add your name",
                 minlength: "Your name must consist of at least 2 characters"
             },
             email: {
-				required: "Please, add your e-mail address.",
+				required: "Please add your e-mail address",
 				validateEmail: 'Please enter a valid email address'
 			},
 			phone: {
 				validatePhone: 'Please enter a valid phone number',
             },
             message: {
-                required: "Please, add your message.",
-                minlength: "Your message is too short."
+                required: "Please add your message",
+                minlength: "Your message is too short"
             }
         },
         submitHandler: function(form) {

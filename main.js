@@ -6,6 +6,8 @@ function initialize() {
     $("#scroll_down_glyph").on('click', scrollDown);
     $(".topic_tile").on('click', modalData);
     $(".nav_section").on('click', closeNavBar);
+    $(".navbar-brand").on('click', closeNavBar);
+    $("section").on('click', closeNavBar);
     $(".skill").on('click', () => {window.open('./assets/docs/rebecca_brewster_resume.pdf')})
 
     $("#pokemonDDRProject").on('click', () => {window.open('http://dev.rebeccabrewster.com/apps/POKEMON-SPEED-BATTLE')});
