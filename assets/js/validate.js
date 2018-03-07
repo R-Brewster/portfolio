@@ -2474,7 +2474,7 @@ $.format = function deprecated() {
 $(function() {
 	function validateEmailText(value,element,param)
 	{
-		if(value === param)
+		if(value == /.+[@].+[.].+/)
 		{
 			return true
 		}
@@ -2493,7 +2493,7 @@ $(function() {
             email: {
 				required: true,
 				email: true,
-				validateEmail: '@',
+				validateEmail: true,
             },
             message: {
                 required: true
