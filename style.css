@@ -137,7 +137,7 @@ img {
 /*	Containers	==================================================*/
 #development_container {
 	background-image: url("./assets/img/sequoia.png");
-	height: 84vh;
+	height: 74vh;
 	background-position: 72% 21%;
 	padding: 30px;
 	/* overflow-y: scroll; */
