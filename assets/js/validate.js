@@ -2474,8 +2474,8 @@ $.format = function deprecated() {
 $(function() {
 	function validateEmailText(value,element,param)
 	{
-		let regex = /.+[@].+[.].+/
-		if(regex.test(value))
+		let regexEmail = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
+		if(regexEmail.test(value))
 		{
 			return true
 		}
@@ -2484,7 +2484,19 @@ $(function() {
 			return false
 		}
 	}
-	jQuery.validator.addMethod("validateEmail", validateEmailText, "Please add valid email");
+	function validatePhoneText(value,element,param)
+	{
+		let regexPhone = /^(\+\d{1,2}\s)?\(?\d{3}\)?[\s.-]?\d{3}[\s.-]?\d{4}$/
+		if(regexPhone.test(value))
+		{
+			return true
+		}
+		else
+		{
+			return false
+		}
+	}
+	jQuery.validator.addMethod("validateEmail", validateEmailText, "Please add valid email").addMethod("validatePhone", validatePhoneText);
     $('#contact').validate({
         rules: {
             name: {
@@ -2495,6 +2507,10 @@ $(function() {
 				required: true,
 				email: true,
 				validateEmail: true,
+			},
+			phone: {
+				required: false,
+				validatePhone: true,
             },
             message: {
                 required: true
@@ -2508,6 +2524,9 @@ $(function() {
             email: {
 				required: "Please, add your e-mail address.",
 				validateEmail: 'Please enter a valid email address'
+			},
+			phone: {
+				validatePhone: 'Please enter a valid phone number',
             },
             message: {
                 required: "Please, add your message.",
@@ -2522,7 +2541,7 @@ $(function() {
                 success: function() {
                     $('#contact :input').attr('disabled', 'disabled');
                     $('#contact').fadeTo( "slow", 1, function() {
-                        $(this).find(':input').attr('disabled', 'disabled');
+                        // $(this).find(':input').attr('disabled', 'disabled');
                         $(this).find('label').css('cursor','default');
                         $('#success').fadeIn();
                     });
