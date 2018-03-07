@@ -2496,7 +2496,8 @@ $(function() {
 			return false
 		}
 	}
-	jQuery.validator.addMethod("validateEmail", validateEmailText, "Please add valid email").addMethod("validatePhone", validatePhoneText);
+	jQuery.validator.addMethod("validateEmail", validateEmailText, "Please add valid email")
+	jQuery.validator.addMethod("validatePhone", validatePhoneText);
     $('#contact').validate({
         rules: {
             name: {
