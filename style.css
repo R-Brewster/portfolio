@@ -577,7 +577,7 @@ label {
 	/*box-shadow: 0 0 10px 5px rgba(224, 225, 221, 0.2);*/
 	/*font-family: 'Cantata One', serif;*/
 	font-family: 'Imprima', sans-serif;
-	margin-bottom: 20px;
+	margin-bottom: 10px;
 	color: #62A87C;
 }
 #hero p.lead {
@@ -587,6 +587,7 @@ label {
 	width: max-content;
 	/*box-shadow: 0 0 10px 5px rgba(224, 225, 221, 0.2);*/
 	font-family: 'Imprima', sans-serif;
+	margin-bottom: 10px;
 }
 #hero .btn {
 	font-size: 12px;
