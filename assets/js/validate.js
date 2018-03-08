@@ -2471,10 +2471,33 @@ $.format = function deprecated() {
 }(jQuery));
 
 
-
-
-
 $(function() {
+	function validateEmailText(value,element,param)
+	{
+		let regexEmail = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
+		if(regexEmail.test(value))
+		{
+			return true
+		}
+		else
+		{
+			return false
+		}
+	}
+	function validatePhoneText(value,element,param)
+	{
+		let regexPhone = /^(\+\d{1,2}\s)?\(?\d{3}\)?[\s.-]?\d{3}[\s.-]?\d{4}$/
+		if(regexPhone.test(value))
+		{
+			return true
+		}
+		else
+		{
+			return false
+		}
+	}
+	jQuery.validator.addMethod("validateEmail", validateEmailText, "Please add valid email")
+	jQuery.validator.addMethod("validatePhone", validatePhoneText);
     $('#contact').validate({
         rules: {
             name: {
@@ -2482,8 +2505,13 @@ $(function() {
                 minlength: 2
             },
             email: {
-                required: true,
-                email: true
+				required: true,
+				email: true,
+				validateEmail: true,
+			},
+			phone: {
+				required: false,
+				validatePhone: true,
             },
             message: {
                 required: true
@@ -2491,15 +2519,19 @@ $(function() {
         },
         messages: {
             name: {
-                required: "Please, add your name.",
+                required: "Please add your name",
                 minlength: "Your name must consist of at least 2 characters"
             },
             email: {
-                required: "Please, add your e-mail address."
+				required: "Please add your e-mail address",
+				validateEmail: 'Please enter a valid email address'
+			},
+			phone: {
+				validatePhone: 'Please enter a valid phone number',
             },
             message: {
-                required: "Please, add your message.",
-                minlength: "Your message is too short."
+                required: "Please add your message",
+                minlength: "Your message is too short"
             }
         },
         submitHandler: function(form) {
@@ -2509,14 +2541,14 @@ $(function() {
                 url:'./assets/php_mailer/mail_handler.php',
                 success: function() {
                     $('#contact :input').attr('disabled', 'disabled');
-                    $('#contact').fadeTo( "slow", 0.15, function() {
-                        $(this).find(':input').attr('disabled', 'disabled');
+                    $('#contact').fadeTo( "slow", 1, function() {
+                        // $(this).find(':input').attr('disabled', 'disabled');
                         $(this).find('label').css('cursor','default');
                         $('#success').fadeIn();
                     });
                 },
                 error: function() {
-                    $('#contact').fadeTo( "slow", 0.15, function() {
+                    $('#contact').fadeTo( "slow", 1, function() {
                         $('#error').fadeIn();
                     });
                 }

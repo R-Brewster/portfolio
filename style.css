@@ -15,6 +15,7 @@ body {
 	overflow-x:hidden;
 	line-height:1.5;
 }
+
 a {
 	color:#62a87c;
 	cursor:pointer;
@@ -124,13 +125,27 @@ img {
 }
 
 #skills_icons {
-	padding-left: 15vh;
+	/* padding-left: 8vh; */
+	margin-left: 10%;
 }
 
+.pic {
+	height: 60vh;
+}
+
+/* #skills_icons > div {
+	margin-left: 0;
+	margin-right: 0;
+} */
+
 /*	Containers	==================================================*/
+#top_dev_container {
+	height: 600px;
+}
+
 #development_container {
 	background-image: url("./assets/img/sequoia.png");
-	height: 63vh;
+	height: 600px;
 	background-position: 72% 21%;
 	padding: 30px;
 	/* overflow-y: scroll; */
@@ -157,6 +172,7 @@ img {
 	background-color: rgba(0, 0, 0, 0.4);
 	box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.4);
 	width: 100%;
+	height: 100%;
 	/* overflow-y: scroll; */
 	/*margin-left: auto;*/
 	/*margin-right: auto;*/
@@ -165,6 +181,7 @@ img {
 #background_container {
 	background-image: url("./assets/img/taft_point.png");
 	background-position: 56% 14%;
+	background-size: 104%;
 }
 
 #education_container {
@@ -182,7 +199,7 @@ img {
 #hobbies_container {
 	background-image: url("./assets/img/flower.png");
 	background-position: 14% 52%;
-	background-size: 128%;
+	background-size: 137%;
 }
 
 /*	Section	==================================================*/
@@ -639,6 +656,7 @@ label {
 .modal-body {
 	font-family: 'Cantata One', serif;
 	overflow-y: scroll;
+	white-space: pre-wrap;
 }
 
 .modal-footer {
@@ -679,8 +697,9 @@ label {
 }
 
 #development_text {
-	height: 53vh;
+	height: 89%;
 	overflow-y: hidden;
+	line-height: 1.6em;
 }
 
 /* #development_container::-webkit-scrollbar {
@@ -804,7 +823,7 @@ label {
 .carousel-control {
 	background:transparent;
 	position:absolute;
-	top:50%;
+	top:80%;
 	margin-top:0px;
 	border-radius:20px;
 	-webkit-border-radius:20px;
@@ -824,42 +843,48 @@ label {
 }
 
 .project h1 {
-	margin-top: 4%;
+	margin-top: 2%;
 	font-family: 'Imprima', sans-serif;
+	font-size: 1.8em;
 }
 
 .project p {
-	margin-top: 4%;
+	margin-top: 2%;
 	font-family: 'Cantata One', serif;
+	font-size: 0.8em;
 }
 
 .project img {
 	position: relative;
+	border: 4px solid white;
+	/* overrides bootstrap carousel height */
+	height: 30vh !important; 
 }
 
 #pokemonDDRProject img {
-	/* left: 44%; */
 	display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 15%;
+    /* width: 28%; */
 }
 
 #clueMemoryMatchProject img {
-	/* left: 24%; */
 	display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 30%;
+	/* width: 28%; */
 }
 
 #helloOperatorProject img {
 	display: block;
     margin-left: auto;
     margin-right: auto;
-    /* width: 50%; */
-	width: 27%;
-    /* left: 36%; */
+	/* width: 28%; */
+}
+
+.gitHub:hover {
+	text-decoration: underline;
+	text-decoration-color: white;
 }
 
 /*	Contact Area	==================================================*/
@@ -1391,8 +1416,8 @@ img.mfp-img {
 
 } */
 .wrapsection {
-	padding-top:140px;
-	padding-bottom:140px;
+	padding-top:100px;
+	padding-bottom:100px;
 	position: relative;
 }
 
@@ -1533,16 +1558,19 @@ img.mfp-img {
 	}
 
 	#skills_icons {
-		padding: 0;
+		margin-left: 4%;
 	}
 
+	#top_dev_container {
+		height:0;
+	}
 }
 
-@media(max-width: 767px) and (orientation: landscape) {
+/* @media(max-width: 767px) and (orientation: landscape) {
 	.project img {
 		width: 10%;
 	}
-}
+} */
 @media (max-width:490px) {
 	.wow {
 		visibility: visible !important;
@@ -1575,4 +1603,10 @@ img.mfp-img {
 	.faq-block {
 		margin: 0;
 	}
+	/* .project img {
+		width: 85% !important; 
+	}
+	.carousel-control {
+		top:75% !important;
+	} */
 }
