@@ -2484,20 +2484,20 @@ $(function() {
 			return false
 		}
 	}
-	function validatePhoneText(value,element,param)
-	{
-		let regexPhone = /^(\+\d{1,2}\s)?\(?\d{3}\)?[\s.-]?\d{3}[\s.-]?\d{4}$/
-		if(regexPhone.test(value))
-		{
-			return true
-		}
-		else
-		{
-			return false
-		}
-	}
+	// function validatePhoneText(value,element,param)
+	// {
+	// 	let regexPhone = /^(\+\d{1,2}\s)?\(?\d{3}\)?[\s.-]?\d{3}[\s.-]?\d{4}$/
+	// 	if(regexPhone.test(value))
+	// 	{
+	// 		return true
+	// 	}
+	// 	else
+	// 	{
+	// 		return false
+	// 	}
+	// }
 	jQuery.validator.addMethod("validateEmail", validateEmailText, "Please add valid email")
-	jQuery.validator.addMethod("validatePhone", validatePhoneText);
+	// jQuery.validator.addMethod("validatePhone", validatePhoneText);
     $('#contact').validate({
         rules: {
             name: {
@@ -2509,10 +2509,10 @@ $(function() {
 				email: true,
 				validateEmail: true,
 			},
-			phone: {
-				required: false,
-				validatePhone: true,
-            },
+			// phone: {
+			// 	required: false,
+			// 	validatePhone: true,
+            // },
             message: {
                 required: true
             }
@@ -2526,9 +2526,9 @@ $(function() {
 				required: "Please add your e-mail address",
 				validateEmail: 'Please enter a valid email address'
 			},
-			phone: {
-				validatePhone: 'Please enter a valid phone number',
-            },
+			// phone: {
+			// 	validatePhone: 'Please enter a valid phone number',
+            // },
             message: {
                 required: "Please add your message",
                 minlength: "Your message is too short"
