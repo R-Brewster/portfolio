@@ -199,7 +199,7 @@ img {
 #hobbies_container {
 	background-image: url("./assets/img/flower.png");
 	background-position: 14% 52%;
-	background-size: 137%;
+	background-size: 150%;
 }
 
 /*	Section	==================================================*/
@@ -944,7 +944,8 @@ label {
 #success,#error {
 	display:none;
 	position: absolute;
-	width:100%;
+    width: 95%;
+    font-size: 0.8em;
 }
 #success span,#erro span {
 	display:block;
