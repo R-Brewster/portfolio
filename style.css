@@ -117,7 +117,7 @@ img {
 }
 
 #gallery i {
-	font-size: 6em;
+	font-size: 5em;
 }
 
 #gallery .col-md-2 {
@@ -139,7 +139,7 @@ img {
 } */
 
 .skill {
-	padding-bottom: 2%
+	padding-bottom: 4%
 }
 
 /*	Containers	==================================================*/
@@ -1574,17 +1574,18 @@ img.mfp-img {
 	}
 }
 
-@media (max-width: 767px) and (orientation: landscape) {
+/* @media (max-width: 767px) and (orientation: landscape) {
 	#skills_icons {
 		margin-left: 14%;
 	}
-}
+} */
 
-/* @media(max-width: 767px) and (orientation: landscape) {
-	.project img {
-		width: 10%;
+/* @media(max-width: 1024px) and (orientation: landscape) {
+	#skills_icons > div {
+		col-md-1
 	}
 } */
+
 @media (max-width:490px) {
 	.wow {
 		visibility: visible !important;
