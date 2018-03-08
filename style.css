@@ -942,7 +942,9 @@ label {
 	color:#fff;
 }
 #success,#error {
-	display:none
+	display:none;
+	position: absolute;
+	width:100%;
 }
 #success span,#erro span {
 	display:block;
