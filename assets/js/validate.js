@@ -2539,11 +2539,17 @@
 							// $(this).find(':input').attr('disabled', 'disabled');
 							$(this).find('label').css('cursor','default');
 							$('#success').fadeIn();
+							setTimeout(() => {
+								$('#success').fadeOut();
+							},3000)
 						});
 					},
 					error: function() {
 						$('#contact').fadeTo( "slow", 1, function() {
 							$('#error').fadeIn();
+							setTimeout(() => {
+								$('#error').fadeOut();
+							},3000)
 						});
 					}
 				});
