@@ -138,6 +138,10 @@ img {
 	margin-right: 0;
 } */
 
+.skill {
+	padding-bottom: 2%
+}
+
 /*	Containers	==================================================*/
 #top_dev_container {
 	height: 600px;
@@ -1562,7 +1566,7 @@ img.mfp-img {
 	}
 
 	#skills_icons {
-		margin-left: 4%;
+		/* margin-left: 4%; */
 	}
 
 	#top_dev_container {
