@@ -2534,7 +2534,7 @@
 					data: $(form).serialize(),
 					url:'./assets/php_mailer/mail_handler.php',
 					success: function() {
-						$('#contact :input').attr('disabled', 'disabled');
+						// $('#contact :input').attr('disabled', 'disabled');
 						$('#contact').fadeTo( "slow", 1, function() {
 							// $(this).find(':input').attr('disabled', 'disabled');
 							$(this).find('label').css('cursor','default');
