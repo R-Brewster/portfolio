@@ -35,6 +35,7 @@ function scrollDown() {
 }
 
 function modalData(event) {
+
         let topic = '';
 
         //If the glyphicon was clicked 
