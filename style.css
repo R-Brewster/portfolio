@@ -215,11 +215,12 @@ img {
 	top:0 !important;
 }
 .section-title {
-	text-transform:uppercase;
-	font-size:30px;
-	letter-spacing:5px;
-	font-family: 'Imprima', sans-serif;
-	color: black;
+    text-transform: uppercase;
+    font-size: 30px;
+    /* letter-spacing: 5px; */
+    font-family: 'Imprima', sans-serif;
+	color: white;
+	margin-bottom: 30px;
 }
 .whitecolor {
 	color: #fff;
@@ -530,7 +531,7 @@ label {
 	font-family: 'Imprima', sans-serif;
 }
 .navbar-inverse .navbar-brand:hover,.navbar-inverse .navbar-brand:focus {
-	color:#000;
+	color:#62a87c;
 }
 .navbar-inverse {
 	background-color:#FFF;
@@ -546,9 +547,9 @@ label {
 .navbar-inverse .navbar-nav>li>a {
 	color:inherit;
 	text-transform:uppercase;
-	font-size:12px;
+	font-size:14px;
 	font-weight:bold;
-	font-family: 'Cantata One', serif;
+	font-family: 'Imprima', sans-serif;
 }
 .navbar-inverse .navbar-nav>li>a:hover,.navbar-inverse .navbar-nav>li>a:focus,.navbar-inverse .navbar-nav>.active>a,.navbar-inverse .navbar-nav>.active>a:hover,.navbar-inverse .navbar-nav>.active>a:focus {
 	background-color:transparent;
@@ -584,7 +585,7 @@ label {
 	/*font-family: 'Cantata One', serif;*/
 	font-family: 'Imprima', sans-serif;
 	margin-bottom: 10px;
-	color: #62A87C;
+	color: white;
 }
 #hero p.lead {
 	font-size: 1.4em;
@@ -594,20 +595,21 @@ label {
 	/*box-shadow: 0 0 10px 5px rgba(224, 225, 221, 0.2);*/
 	font-family: 'Imprima', sans-serif;
 	margin-bottom: 10px;
+	color: white;
 }
 #hero .btn {
 	font-size: 12px;
 	font-weight: bold;
-	background-color: rgba(224, 225, 221, 0.7);
+	background-color:rgba(98,168,124,0.8);
 	animation: fadeIn 4s;
 	text-shadow: none;
-	color: black;
-	/*font-family: 'Imprima', sans-serif;*/
-	font-family: 'Cantata One', serif;
+	color: white;
+	font-family: 'Imprima', sans-serif;
+	/* font-family: 'Cantata One', serif; */
 }
 
 #hero .btn:hover {
-	background-color: rgba(98,168,124,0.8);
+	background-color: black;
 	color: white;
 }
 
@@ -686,7 +688,7 @@ label {
 .maintitle .lead {
 	max-width:840px;
 	margin:0px auto;
-	margin-bottom:80px;
+	/* margin-bottom:80px; */
 	padding-left:20px;
 	padding-right:20px;
 }
@@ -827,7 +829,7 @@ label {
 	font-size:20px;
 }
 .carousel-indicators {
-	bottom:-60px;
+	bottom:-20px;
 }
 .carousel-control {
 	background:transparent;
@@ -855,7 +857,7 @@ label {
 	margin-top: 2%;
 	font-family: 'Imprima', sans-serif;
 	font-size: 1.8em;
-	color: black;
+	color: white;
 }
 
 .project p {
@@ -893,13 +895,12 @@ label {
 }
 
 .gitHub {
-	color: black;
+	color: white;
 	font-weight: bold;
 }
 
 .gitHub:hover {
-	text-decoration: underline;
-	text-decoration-color: black;
+	color: black;
 }
 
 /*	Contact Area	==================================================*/
@@ -908,6 +909,7 @@ label {
 }
 #contactarea .maintitle p.lead {
 	margin-bottom:40px;
+	color: white;
 }
 #contactarea form {
 	max-width:800px;
@@ -922,7 +924,7 @@ label {
 	font-weight:300;
 	letter-spacing:3px;
 	font-size:13px;
-	color: black;
+	color: white;
     font-weight: bold;
 }
 #contact input,#contact select,#contact textarea {
@@ -1443,8 +1445,8 @@ img.mfp-img {
 
 } */
 .wrapsection {
-	padding-top:100px;
-	padding-bottom:100px;
+	padding-top:80px;
+	padding-bottom:80px;
 	position: relative;
 }
 
