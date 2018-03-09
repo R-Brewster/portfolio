@@ -313,12 +313,6 @@ jQuery(window).bind('load', function() {
     parallaxInit();
 });
 
-// if($(window).width() < 1024 ){
-//     jQuery(window).unbind('load', function() {
-//     parallaxInit();
-//     });
-// }
-
 function parallaxInit() {
     jQuery('.parallax').each(function() {
         jQuery(this).parallax("30%", 0.3);
@@ -328,7 +322,7 @@ function parallaxInit() {
 function parallax() {
     var scrollPosition = $(window).scrollTop();
     $('#parallax').css('top', (0 - (scrollPosition * 0.3)) + 'px'); // bg image moves at 30% of scrolling speed
-    $('#hero').css('opacity', ((100 - scrollPosition / 2) * 0.01));
+    // $('#hero').css('opacity', ((100 - scrollPosition / 2) * 0.01));
 }
 
 
