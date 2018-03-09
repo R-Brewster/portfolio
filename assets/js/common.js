@@ -1,4 +1,4 @@
-//----SMOOTH SCROLL---//
+0//----SMOOTH SCROLL---//
 function init() {
     if (document.body) {
         var e = document.body,
@@ -294,7 +294,7 @@ http://www.gnu.org/licenses/gpl.html
                     return;
                 }
 
-                $this.css('backgroundPosition', xpos + " " + Math.round((firstTop - pos) * speedFactor) + "px");
+                // $this.css('backgroundPosition', xpos + " " + Math.round((firstTop - pos) * speedFactor) + "px");
 
             });
         }
@@ -322,7 +322,7 @@ function parallaxInit() {
 function parallax() {
     var scrollPosition = $(window).scrollTop();
     $('#parallax').css('top', (0 - (scrollPosition * 0.3)) + 'px'); // bg image moves at 30% of scrolling speed
-    $('#hero').css('opacity', ((100 - scrollPosition / 2) * 0.01));
+    // $('#hero').css('opacity', ((100 - scrollPosition / 2) * 0.01));
 }
 
 
