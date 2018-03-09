@@ -18,9 +18,9 @@ function initialize() {
         }
     })
 
-    $("#pokemonDDRProject").on('click', () => {window.open('http://dev.rebeccabrewster.com/apps/POKEMON-SPEED-BATTLE')});
+    $("#pokemonDDRProject").on('click', () => {window.open('http://rebeccabrewster.com/apps/POKEMON-SPEED-BATTLE')});
     $("#pokemonGithub").on('click',  () => {window.open('https://github.com/collinwong53/POKEMON-SPEED-BATTLE')});
-    $("#clueMemoryMatchProject").on('click',  () => {window.open('http://dev.rebeccabrewster.com/apps/CLUE-MEMORY-MATCH')});
+    $("#clueMemoryMatchProject").on('click',  () => {window.open('http://rebeccabrewster.com/apps/CLUE-MEMORY-MATCH')});
     $("#clueGithub").on('click',  () => {window.open('https://github.com/R-Brewster/CLUE-MEMORY-MATCH')});
     $("#helloOperatorProject").on('click',  () => {window.open('http://hello-operator.net')})
     $("#helloOperatorGithub").on('click',  () => {window.open('https://github.com/michaeljlin/hello-operator')});
