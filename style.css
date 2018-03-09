@@ -14,6 +14,7 @@ body {
 	background-color:#fff;
 	overflow-x:hidden;
 	line-height:1.5;
+	overflow-y: scroll;
 }
 
 a {
@@ -334,7 +335,7 @@ img {
 .nav .open>a,.nav .open>a:hover,.nav .open>a:focus {
 	background:transparent;
 	border:none;
-	border-color:rgba(255,255,255,0);
+	border-color:#62a87c;
 }
 .nav>li>a:hover,.nav>li>a:focus {
 	background-color:#ecf0f1;
@@ -363,12 +364,19 @@ img {
 	border-color:#bdc3c7;
 }
 .navbar-inverse .navbar-toggle {
-	background-color:#34495e;
-	border-color:#2c3e50;
-	margin-top:23px;
+	background-color:black;
+	border-color: black;
+	margin-top:19px;
 }
 .navbar-inverse .navbar-toggle:focus {
 	outline:none;
+	background-color:#62a87c;
+	border-color:#62a87c;
+}
+.navbar-inverse .navbar-toggle:hover {
+	outline:none;
+	background-color:#62a87c;
+	border-color:#62a87c;
 }
 .panel {
 	box-shadow:none;
@@ -897,10 +905,13 @@ label {
 .gitHub {
 	color: white;
 	font-weight: bold;
+	text-decoration: underline;
+	text-decoration-color: white;
 }
 
 .gitHub:hover {
 	color: black;
+	text-decoration-color: black;
 }
 
 /*	Contact Area	==================================================*/

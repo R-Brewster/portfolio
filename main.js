@@ -9,6 +9,14 @@ function initialize() {
     $(".navbar-brand").on('click', closeNavBar);
     $("section").on('click', closeNavBar);
     $(".skill").on('click', () => {window.open('./assets/docs/rebecca_brewster_resume.pdf')})
+    $(".navbar-toggle").on('click', () => {
+        if ($("body").css('overflow-y') === 'scroll') {
+            $("body").css('overflow-y', 'hidden')
+        }
+        else if ($("body").css('overflow-y') === 'hidden') {
+            $("body").css('overflow-y', 'scroll')
+        }
+    })
 
     $("#pokemonDDRProject").on('click', () => {window.open('http://dev.rebeccabrewster.com/apps/POKEMON-SPEED-BATTLE')});
     $("#pokemonGithub").on('click',  () => {window.open('https://github.com/collinwong53/POKEMON-SPEED-BATTLE')});
@@ -76,4 +84,5 @@ function modalText(topic) {
 
 function closeNavBar() {
     $(".navbar-collapse").collapse('hide');
+    $("body").css('overflow-y', 'scroll')
 }
