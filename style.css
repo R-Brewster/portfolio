@@ -51,7 +51,7 @@ h3 {
 }
 
 #about h3 {
-	color: #62a87c;
+	color: white;
 }
 
 #about p {
@@ -102,11 +102,11 @@ img {
 }
 
 .glyphicon {
-	color: #62A87C
+	color: white;
 }
 
 .glyphicon:hover {
-	color: white;
+	color: black;
 	cursor: pointer;
 }
 
@@ -219,6 +219,7 @@ img {
 	font-size:30px;
 	letter-spacing:5px;
 	font-family: 'Imprima', sans-serif;
+	color: black;
 }
 .whitecolor {
 	color: #fff;
@@ -510,7 +511,7 @@ label {
 	top:0;
 	position:fixed;
 	/* background-image:url('./assets/img/oak_bw_dark.png'); */
-	background-position:center center;
+	/* background-position:center center; */
 	background-repeat:no-repeat;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
@@ -628,7 +629,8 @@ label {
 }
 
 #scroll_down_glyph:hover {
-	color: white;
+	color: black;
+	text-shadow: 1px 0px white;
 }
 
 #scroll_up_glyph {
@@ -638,7 +640,8 @@ label {
 }
 
 #scroll_up_glyph:hover {
-	color: white;
+	color: black;
+	text-shadow: 1px 0px white;
 }
 
 #about_modal {
@@ -750,7 +753,7 @@ label {
 }
 
 #gallery i:hover {
-	color: #62A87C;
+	color: black;
 	cursor: pointer;
 }
 
@@ -770,15 +773,15 @@ label {
 	background-image:none;
 }
 .carousel-control {
-	color:#62A87C;
+	color: white;
 	opacity:1;
 	text-shadow:none;
 }
 .carousel-control:hover {
-	color:#62A87C;
+	color: white;
 }
 .carousel-indicators li {
-	border-color:#62A87C;
+	border-color: white;
 	margin:0 2px;
 	height:15px;
 	width:15px;
@@ -798,8 +801,8 @@ label {
 	-webkit-border-radius:10px;
 	-moz-border-radius:10px;
 	margin:0 2px;
-	background-color:#62A87C;
-	border:1px solid #62A87C;
+	background-color: white;
+	border:1px solid white;
 }
 .carousel.slide {
 	-moz-transition:all .2s;
@@ -852,6 +855,7 @@ label {
 	margin-top: 2%;
 	font-family: 'Imprima', sans-serif;
 	font-size: 1.8em;
+	color: black;
 }
 
 .project p {
@@ -888,9 +892,14 @@ label {
 	/* width: 28%; */
 }
 
+.gitHub {
+	color: black;
+	font-weight: bold;
+}
+
 .gitHub:hover {
 	text-decoration: underline;
-	text-decoration-color: white;
+	text-decoration-color: black;
 }
 
 /*	Contact Area	==================================================*/
@@ -913,6 +922,8 @@ label {
 	font-weight:300;
 	letter-spacing:3px;
 	font-size:13px;
+	color: black;
+    font-weight: bold;
 }
 #contact input,#contact select,#contact textarea {
 	font-family:inherit;
@@ -929,17 +940,24 @@ label {
 	margin-bottom:0px;
 }
 #contact input#submit {
-	width:auto;
-	margin-top:20px;
-	background-color:rgba(0,0,0,0.3);
-	border:0;
-	color:#fff;
-	padding:0px 20px;
-	font-weight:400;
-	text-transform:uppercase;
-	letter-spacing:3px;
-	font-size:14px;
+    width: auto;
+    margin-top: 20px;
+    background-color: black;
+    border: 0;
+    color: #fff;
+    padding: 0px 20px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 14px;
 }
+
+#contact input#submit:hover {
+	color: black;
+	background-color: white;
+	font-weight: bold;
+}
+
 #contact textarea {
 	height:180px;
 }
