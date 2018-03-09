@@ -366,7 +366,7 @@ img {
 .navbar-inverse .navbar-toggle {
 	background-color:black;
 	border-color: black;
-	margin-top:23px;
+	margin-top:19px;
 }
 .navbar-inverse .navbar-toggle:focus {
 	outline:none;
