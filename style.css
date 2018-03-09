@@ -375,10 +375,6 @@ img {
 }
 .navbar-inverse .navbar-toggle:hover {
 	outline:none;
-	background-color:#62a87c;
-	border-color:#62a87c;
-}
-.panel {
 	box-shadow:none;
 	-webkit-box-shadow:none;
 	-moz-box-shadow:none;
@@ -680,6 +676,11 @@ label {
 
 .modal-footer {
 	border-top: 1px solid #62A87C;
+}
+
+body.modal-open {
+	/* Overrides this template's scroll function */
+    overflow: hidden !important;
 }
 
 /*	Features	==================================================*/
