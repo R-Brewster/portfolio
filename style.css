@@ -1467,7 +1467,7 @@ img.mfp-img {
 		margin:0 7px;
 	}
 }
-@media (max-width:812px) {
+@media (max-width:767px), (max-height:376px) {
 	/* .section,.parallax.section .container {
 		padding-top:30px;
 		padding-bottom:30px;
