@@ -1,4 +1,4 @@
-//----SMOOTH SCROLL---//
+0//----SMOOTH SCROLL---//
 function init() {
     if (document.body) {
         var e = document.body,
@@ -312,6 +312,12 @@ http://www.gnu.org/licenses/gpl.html
 jQuery(window).bind('load', function() {
     parallaxInit();
 });
+
+// if($(window).width() < 1024 ){
+//     jQuery(window).unbind('load', function() {
+//     parallaxInit();
+//     });
+// }
 
 function parallaxInit() {
     jQuery('.parallax').each(function() {
