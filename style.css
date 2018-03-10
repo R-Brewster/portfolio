@@ -952,6 +952,7 @@ body.modal-open {
 #contact input,#contact select {
 	height:40px;
 	margin-bottom:0px;
+	padding-left: 15px;
 }
 #contact input#submit {
     width: auto;
@@ -974,6 +975,7 @@ body.modal-open {
 
 #contact textarea {
 	height:180px;
+	padding-left: 15px;
 }
 .required {
 	color:#fff;
@@ -1034,19 +1036,20 @@ body.modal-open {
 	color:inherit;
 }
 #credits .social i {
-	border:1px solid #ccc;
+	border:1px solid black;
 	height:30px;
 	width:30px;
 	line-height:30px;
 	border-radius:50%;
-	margin-left:2px;
-	color:#999;
+	margin-left:20px;
+	color:black;
 	text-align:center;
 	margin-bottom:15px;
 	display:inline-block;
 }
 #credits .social i:hover {
-	color: #333;
+	color: #62a87c;
+	border:1px solid #62a87c;
 }
 /*	Magnific Popup	==================================================*/
 .mfp-bg {
