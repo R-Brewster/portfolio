@@ -7,6 +7,7 @@
 	<meta name="description" content="">
 	<meta name="author" content="">
 	<title>Rebecca Brewster Portfolio </title>
+	<link rel="icon" type="image/png" href="./assets/img/icon.png" sizes="32x32" />
 
 	<!-- Styles -->
 	<link rel='stylesheet' href='assets/css/bootstrap.min.css'>
@@ -69,7 +70,7 @@
 					<a href="#gallery">Skills</a>
 				</li>
 				<li class="nav_section">
-					<a href="#projects">Projects</a>
+					<a href="#projects">Applications</a>
 				</li>
 				<!--<li>-->
 					<!--<a href="#faq">FAQ</a>-->
@@ -77,7 +78,7 @@
 				<li class="nav_section">
 					<a href="#contactarea">Contact</a>
 				</li>
-				<li>
+				<li class="nav_section">
 					<a target="_blank" href=./assets/docs/rebecca_brewster_resume.pdf>Resume</a>
 				</li>
 			</ul>
@@ -87,7 +88,7 @@
 
 <!-- Intro
 	================================================== -->
-<section id="hero" class="section">
+<section id="hero" class="section" style="background-image: url('./assets/img/oak_bw_dark.png');">
 	<div class="container">
 		<div class="row">
 			<div class="col-lg-2 col-md-3 col-sm-3">
@@ -115,7 +116,7 @@
 	================================================== -->
 	<section id="about" class="parallax section">
 		<div class="wrapsection">
-			<div class="parallax-overlay" style="background-color: black"></div>
+			<div class="parallax-overlay" style="background-color: #62a87c"></div>
 			<div class="container">
 				<div class="row">
 					<div class="col-md-12">
@@ -125,8 +126,8 @@
 							<p class="lead"></p>
 						</div>
 					</div>
-						<div class="col-md-4 col-sm-6">
-							<div id="development_container" class="service-box wow zoomIn" data-wow-duration="1.5s" data-wow-delay="0.1s">
+						<div class="col-md-4 col-sm-6" id="top_dev_container">
+							<div id="development_container" class="service-box wow fadeIn" data-wow-duration="1.5s" data-wow-delay="0.1s">
 								<div class="text_container_development">
 									<h3>Getting Into Development</h3>
 									<div class="text-left"  id="development_text">
@@ -146,7 +147,7 @@
 							</div>
 						</div>
 						<div id='into_development_tile' class="col-md-4 col-sm-6">
-								<div id="into_development_container" class="service-box topic_tile wow flipInY" data-wow-duration="1.5s" data-wow-delay="0.1s" data-toggle="modal" target="#aboutModal"  data-whatever="Development">
+								<div id="into_development_container" class="service-box topic_tile wow fadeIn" data-wow-duration="1.5s" data-wow-delay="0.1s" data-toggle="modal" target="#aboutModal"  data-whatever="Development">
 									<span id="developmentGlyphicon" class="glyphicon glyphicon-tasks"></span>
 									<div class="text_container">
 										<h3 id="backgroundText">Development</h3>
@@ -154,7 +155,7 @@
 								</div>
 							</div>
 						<div class="col-md-4 col-sm-6">
-							<div id="background_container" class="service-box topic_tile wow flipInY" data-wow-duration="1.5s" data-wow-delay="0.1s" data-toggle="modal" target="#aboutModal"  data-whatever="Background">
+							<div id="background_container" class="service-box topic_tile wow fadeIn" data-wow-duration="1.5s" data-wow-delay="0.1s" data-toggle="modal" target="#aboutModal"  data-whatever="Background">
 								<span id="backgroundGlyphicon" class="glyphicon glyphicon-user"></span>
 								<div class="text_container">
 									<h3 id="backgroundText">Background</h3>
@@ -163,7 +164,7 @@
 						</div>
 			
 						<div class="col-md-4 col-sm-6">
-							<div id="education_container" class="service-box topic_tile wow flipInY" data-wow-duration="1.5s" data-wow-delay="0.2s" data-toggle="modal" target="#aboutModal" data-whatever="Education">
+							<div id="education_container" class="service-box topic_tile wow fadeIn" data-wow-duration="1.5s" data-wow-delay="0.2s" data-toggle="modal" target="#aboutModal" data-whatever="Education">
 								<span id="educationGlyphicon" class="glyphicon glyphicon-education"></span>
 								<div class="text_container">
 									<h3 id="educationText">Education</h3>
@@ -171,7 +172,7 @@
 							</div>
 						</div>
 						<div class="col-md-4 col-sm-6">
-							<div id="workhistory_container" class="service-box topic_tile wow flipInY" data-wow-duration="1.5s" data-wow-delay="0.3s" data-toggle="modal" target="#aboutModal" data-whatever="Employment">
+							<div id="workhistory_container" class="service-box topic_tile wow fadeIn" data-wow-duration="1.5s" data-wow-delay="0.3s" data-toggle="modal" target="#aboutModal" data-whatever="Employment">
 								<span id="employmentGlyphicon" class="glyphicon glyphicon-hourglass"></span>
 								<div class="text_container">
 									<h3 id="employmentText">Employment</h3>
@@ -179,7 +180,7 @@
 							</div>
 						</div>
 						<div class="col-md-4 col-sm-6">
-							<div id="hobbies_container" class="service-box topic_tile wow flipInY" data-wow-duration="1.5s" data-wow-delay="0.4s" data-toggle="modal" target="#aboutModal" data-whatever="Hobbies">
+							<div id="hobbies_container" class="service-box topic_tile wow fadeIn" data-wow-duration="1.5s" data-wow-delay="0.4s" data-toggle="modal" target="#aboutModal" data-whatever="Hobbies">
 								<span id="hobbiesGlyphicon" class="glyphicon glyphicon-heart"></span>
 								<div class="text_container">
 									<h3 id="hobbiesText">Hobbies</h3>
@@ -208,10 +209,10 @@
 	</section>
 <!-- Random
 	================================================== -->
-<section class="parallax section" style="background-image: url('./assets/img/tahoe.png');">
+<section class="parallax section pic" style="background-image: url('./assets/img/tahoe.png');">
 	<div class="wrapsection">
 		<div class="parallax-overlay"></div>
-		<div class="container">
+		<!-- <div class="container">
 			<div class="row">
 				<div class="col-md-12 sol-sm-12">
 					<div class="maintitle">
@@ -224,12 +225,12 @@
 					</div>
 				</div>
 			</div>
-		</div>
+		</div> -->
 	</div>
 </section>
 <!-- Gallery
 	================================================== -->
-<section id="gallery" class="parallax section" style="background-color: black;">
+<section id="gallery" class="parallax section" style="background-color: #62a87c;">
 	<div class="wrapsection">
 		<div class="parallax-overlay"></div>
 		<div class="container">
@@ -241,58 +242,58 @@
 				</div>
 			</div>
 			<div id='skills_icons' class="row">
-				<div class="col-md-2 col-xs-3 skill text-center wow fadeIn animated">
+				<div class="col-lg-2 col-md-3 col-sm-2 col-xs-4 skill text-center wow fadeIn animated">
 					<i class="devicon-amazonwebservices-plain-wordmark"></i>
 				</div>
-				<div class="col-md-2 col-xs-3 skill text-center wow fadeIn animated">
+				<div class="col-lg-2 col-md-3 col-sm-2 col-xs-4 skill text-center wow fadeIn animated">
 					<i class="devicon-bootstrap-plain-wordmark"></i>
 				</div>
-				<div class="col-md-2 col-xs-3 skill text-center wow fadeIn animated">
+				<div class="col-lg-2 col-md-3 col-sm-2 col-xs-4 skill text-center wow fadeIn animated">
 					<i class="devicon-chrome-plain-wordmark"></i>
 				</div>
-				<div class="col-md-2 col-xs-3 skill text-center wow fadeIn animated">
+				<div class="col-lg-2 col-md-3 col-sm-2 col-xs-4 skill text-center wow fadeIn animated">
 					<i class="devicon-css3-plain-wordmark"></i>
 				</div>
-				<div class="col-md-2 col-xs-3 skill text-center wow fadeIn animated">
+				<div class="col-lg-2 col-md-3 col-sm-2 col-xs-4 skill text-center wow fadeIn animated">
 					<i class="devicon-gimp-plain"></i>
 				</div>
-				<div class="col-md-2 col-xs-3 skill text-center wow fadeIn animated">
+				<div class="col-lg-2 col-md-3 col-sm-2 col-xs-4 skill text-center wow fadeIn animated">
 					<i class="devicon-git-plain-wordmark"></i>
 				</div>
-				<div class="col-md-2 col-xs-3 skill text-center wow fadeIn animated">
+				<div class="col-lg-2 col-md-3 col-sm-2 col-xs-4 skill text-center wow fadeIn animated">
 					<i class="devicon-github-plain"></i>
 				</div>
-				<div class="col-md-2 col-xs-3 skill text-center wow fadeIn animated">
+				<div class="col-lg-2 col-md-3 col-sm-2 col-xs-4 skill text-center wow fadeIn animated">
 					<i class="devicon-html5-plain-wordmark"></i>
 				</div>
-				<div class="col-md-2 col-xs-3 skill text-center wow fadeIn animated">
+				<div class="col-lg-2 col-md-3 col-sm-2 col-xs-4 skill text-center wow fadeIn animated">
 					<i class="devicon-inkscape-plain-wordmark"></i>
 				</div>
-				<div class="col-md-2 col-xs-3 skill text-center wow fadeIn animated">
+				<div class="col-lg-2 col-md-3 col-sm-2 col-xs-4 skill text-center wow fadeIn animated">
 					<i class="devicon-javascript-plain"></i>
 				</div>
-				<div class="col-md-2 col-xs-3 skill text-center wow fadeIn animated">
+				<div class="col-lg-2 col-md-3 col-sm-2 col-xs-4 skill text-center wow fadeIn animated">
 					<i class="devicon-jquery-plain"></i>
 				</div>
-				<div class="col-md-2 col-xs-3 skill text-center wow fadeIn animated">
+				<div class="col-lg-2 col-md-3 col-sm-2 col-xs-4 skill text-center wow fadeIn animated">
 					<i class="devicon-mysql-plain-wordmark"></i>
 				</div>
-				<div class="col-md-2 col-xs-3 skill text-center wow fadeIn animated">
+				<div class="col-lg-2 col-md-3 col-sm-2 col-xs-4 skill text-center wow fadeIn animated">
 					<i class="devicon-nodejs-plain-wordmark"></i>
 				</div>
-				<div class="col-md-2 col-xs-3 skill text-center wow fadeIn animated">
+				<div class="col-lg-2 col-md-3 col-sm-2 col-xs-4 skill text-center wow fadeIn animated">
 					<i class="devicon-photoshop-line"></i>
 				</div>
-				<div class="col-md-2 col-xs-3 skill text-center wow fadeIn animated">
+				<div class="col-lg-2 col-md-3 col-sm-2 col-xs-4 skill text-center wow fadeIn animated">
 					<i class="devicon-react-original-wordmark"></i>
 				</div>
-				<div class="col-md-2 col-xs-3 skill text-center wow fadeIn animated">
+				<div class="col-lg-2 col-md-3 col-sm-2 col-xs-4 skill text-center wow fadeIn animated">
 					<i id="slack" class="devicon-slack-plain-wordmark"></i>
 				</div>
-				<div class="col-md-2 col-xs-3 skill text-center wow fadeIn animated">
+				<div class="col-lg-2 col-md-3 col-sm-2 col-xs-4 skill text-center wow fadeIn animated">
 					<i class="devicon-twitter-plain"></i>
 				</div>
-				<div class="col-md-2 col-xs-3 skill text-center wow fadeIn animated">
+				<div class="col-lg-2 col-md-3 col-sm-2 col-xs-4 skill text-center wow fadeIn animated">
 					<i class="devicon-visualstudio-plain"></i>
 				</div>
 
@@ -302,9 +303,9 @@
 </section>
 <!-- Text Carousel
 	================================================== -->
-<section id="slider" class="parallax section" style="background-image: url('./assets/img/lajolla.png');">
+<section id="slider" class="parallax section pic" style="background-image: url('./assets/img/lajolla.png');">
 	<div class="wrapsection">
-		<div class="container">
+		<!-- <div class="container">
 			<div class="row">
 				<div class="col-md-12 text-center">
 					<div id="center_text_container" style='color: transparent;'>
@@ -315,14 +316,17 @@
 					</div>
 				</div>
 			</div>
-		</div>
+		</div> -->
 	</div>
 </section>
 <!-- FAQ
 	================================================== -->
-<section id="projects" class="section">
+<section id="projects" class="section" style="background-color: #62a87c">
 	<div class="wrapsection">
 		<div class="container">
+			<div class="maintitle">
+					<h3 class="section-title">Applications</h3>
+				</div>
 			<div id="Carousel" class="carousel slide">
 				<ol class="carousel-indicators">
 					<li data-target="#Carousel" data-slide-to="0" class="active"></li>
@@ -334,21 +338,21 @@
 							<img src="./assets/img/hello_operator.png">
 							<h1>Hello, Operator</h1>
 							<p>Are you and your fellow agent a good enough team to complete the mission?</p>
-							<p id="clueGithub">Github</p>
+							<p id="helloOperatorGithub" class="gitHub">Github</p>
 					</div>
 
 					<div id="clueMemoryMatchProject" class="item project">
-							<img src="./assets/img/clue_small.png">
+							<img src="./assets/img/clue.png">
 							<h1>Clue Memory Match</h1>
 							<p>A party at the Boddy Mansion goes awry. It's up to you to find out who is responsible</p>
-							<p id="clueGithub">Github</p>
+							<p id="clueGithub" class="gitHub">Github</p>
 					</div>
 
 					<div id="pokemonDDRProject" class="item project">
-						<img src="./assets/img/pokeball.png">
+						<img src="./assets/img/pokemon.png">
 						<h1>Pokemon Speed Battle</h1>
 						<p>Ready to see which pokemon will win? You'll need to be fast</p>
-						<p id="pokemonGithub">Github</p>
+						<p id="pokemonGithub" class="gitHub">Github</p>
 					</div>	
 				</div>
 				<a class="left carousel-control" href="#Carousel" data-slide="prev">
@@ -364,9 +368,9 @@
 </section>
 <!-- Random
 	================================================== -->
-<section class="whitecolor parallax section" style="background-image: url('./assets/img/blue_sky.png');">
+<section class="whitecolor parallax section pic" style="background-image: url('./assets/img/blue_sky.png');">
 	<div class="wrapsection">
-		<div class="container">
+		<!-- <div class="container">
 			<div class="row">
 				<div class="col-md-12 sol-sm-12 text-center">
 					<div id="center_text_container" style='color: transparent;'>
@@ -377,45 +381,45 @@
 					</div>
 				</div>
 			</div>
-		</div>
+		</div> -->
 	</div>
 </section>
 <!-- Contact
 	================================================== -->
 <section id="contactarea" class="parallax section" style="background-image: url(http://themepush.com/demo/runcharity/assets/img/map.png);">
 	<div class="wrapsection">
-		<div class="parallax-overlay" style="background-color: black;"></div>
+		<div class="parallax-overlay" style="background-color: #62a87c;"></div>
 		<div class="container">
 			<div class="row">
 				<div class="col-md-12">
 					<div class="maintitle">
 						<h3 class="section-title">Get in Touch</h3>
-						<p class="lead" style="color: #62A87C">
+						<p class="lead">
 							I would love the chance to talk to you, please send me a message
 						</p>
 					</div>
 					<form id="contact" name="contact" method="post" class="text-left">
 						<fieldset>
 							<div class="row">
-								<div class="col-md-4 wow fadeIn animated animated" data-wow-delay="0.1s" data-wow-duration="2s">
+								<div class="col-md-6 wow fadeIn animated animated" data-wow-delay="0.1s" data-wow-duration="2s">
 									<label for="name">Name<span class="required">*</span></label>
 									<input type="text" name="name" id="name" size="30" value="" required/>
 								</div>
-								<div class="col-md-4 wow fadeIn animated" data-wow-delay="0.3s" data-wow-duration="2s">
+								<div class="col-md-6 wow fadeIn animated" data-wow-delay="0.3s" data-wow-duration="2s">
 									<label for="email">Email<span class="required">*</span></label>
 									<input type="text" name="email" id="email" size="30" value="" required/>
 								</div>
-								<div class="col-md-4 wow fadeIn animated" data-wow-delay="0.3s" data-wow-duration="2s">
+								<!-- <div class="col-md-4 wow fadeIn animated" data-wow-delay="0.3s" data-wow-duration="2s">
 									<label for="phone">Phone</label>
 									<input type="text" name="phone" id="phone" size="30" value=""/>
-								</div>
+								</div> -->
 							</div>
 							<div class="wow fadeIn animated" data-wow-delay="0.3s" data-wow-duration="1.5" style="margin-top:15px;">
 								<label for="message">Message<span class="required">*</span></label>
 								<textarea name="message" id="message" required></textarea>
 							</div>
 							<div class="wow fadeIn animated" data-wow-delay="0.3" data-wow-duration="1.5s">
-								<input id="submit" type="submit" name="submit" value="Send" style="color: #62A87C"/>
+								<input id="submit" type="submit" name="submit" value="Send"/>
 							</div>
 						</fieldset>
 					</form>
@@ -437,16 +441,16 @@
 <!-- Credits
 =============================================== -->
 <section id="credits" class="text-center">
-	<!-- <span class="social wow zoomIn">
-	<a href="#"><i class="fa fa-facebook"></i></a>
-	<a href="#"><i class="fa fa-twitter"></i></a>
-	<a href="#"><i class="fa fa-skype"></i></a>
-	<a href="#"><i class="fa fa-linkedin"></i></a>
-	<a href="#"><i class="fa fa-pinterest"></i></a>
-	<a href="#"><i class="fa fa-google-plus"></i></a>
+	<span class="social wow zoomIn">
+	<!-- <a href="#"><i class="fa fa-facebook"></i></a> -->
+	<!-- <a href="#"><i class="fa fa-twitter"></i></a> -->
+	<a style="color: black" target="_blank" href="https://github.com/R-Brewster"><i class="fa fa-github"></i></a>
+	<a style="color: black"  target="_blank" href="https://www.linkedin.com/in/rebecca-brewster/"><i class="fa fa-linkedin"></i></a>
+	<!-- <a href="#"><i class="fa fa-pinterest"></i></a> -->
+	<!-- <a href="#"><i class="fa fa-google-plus"></i></a> -->
 	</span><br/>
-	Copyright &copy; <a href="#">Your Agency</a> -->
-	<br/>Template By <i class="fa fa-heart"></i> WowThemes.Net
+	<!-- Copyright &copy; <a href="#">Your Agency</a> -->
+	<!-- <br/>Template By <i class="fa fa-heart"></i> WowThemes.Net -->
 </section>
 <!-- Bootstrap core JavaScript
 	================================================== -->
